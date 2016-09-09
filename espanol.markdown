@@ -11,9 +11,9 @@ hero_content_markdown: |-
 hero_cta: English
 hero_link: /
 banner_image: 'http://placehold.it/1200x400'
-location_description_markdown: 'Enter at the back of the building, under the Lobby Entrance sign.'
+location_description_markdown: 'Por favor Ingrese por la parte en la posterior del edificio "Lobby Entrance"'
 location_button: Get Directions
-location_title: Location
+location_title: Localización
 areas_of_practice:
   - title: Immigration Law
     icon: bank

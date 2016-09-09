@@ -5,7 +5,7 @@ hero_header: "When Removal Threatens Your Family, Don't Go To Court Alone."
 hero_content_markdown: |-
   Contact the Law Office of Linda Cornelius to schedule an appointment.
 
-  Initial Consultation is $50.
+  &nbsp;
 
   ## Call Today: 301.439.0011
 hero_cta: En Espanol

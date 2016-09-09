@@ -1,0 +1,62 @@
+---
+---
+<!DOCTYPE html>
+<html>
+<head>
+	{% include head.html %}
+	<link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+	{% include nav.html %}
+	<main id="main">
+		<section id="hero" class="flex-center navbar-pad" style="background-image:url('{{page.banner_image}}')">
+			<div class="container">
+				<div class="col-sm-6 col-sm-offset-6 text-center translucent-block">
+					<h2 style="padding-bottom: 10px; border-bottom: 2px solid #690A15">{{page.hero_header}}</h2>
+					{{page.hero_content | markdownify }}
+					<a class="btn btn-default btn-block btn-lg" href="{{page.hero_link}}">{{page.hero_cta}}</a>
+				</div>
+			</div>
+		</section>
+		<section class="bg-dark">
+			<div class="container">
+				<div class="row">
+					{% for area in page.areas %}
+						<div class="col-sm-4 text-center">
+							<h1><i class="fa fa-4x fa-{{area.icon}}"></i></h1>
+							<h3>{{area.title}}</h3>
+							<p>{{area.description | markdownify}}</p>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+		</section>
+		<section class="container page-content" style="padding-top: 1em; padding-bottom: 2em;">
+        	{{ content }}
+		</section>
+		<img src="https://s3.amazonaws.com/cornelius.legal/20151020_152643+(1).jpg" width="100%">
+		<section class="container" style="padding-top: 1em; padding-bottom: 2em;">
+			<div class="row">
+				<div class="col-sm-6 text-center">
+					<h2>{{page.location_title}}</h2>
+					<h3>
+						{{site.address}}<br/>
+						{{site.city}}, {{site.state}} {{site.zip}}
+					</h3>
+					<p>{{page.location_description | markdownify}}</p>
+					<a class="btn btn-default btn-block btn-lg" href="#"><i class="fa fa-map-marker"></i> {{page.location_button}}</a>
+				</div>
+				<div class="col-sm-6">
+					<img 
+						class="img-responsive"
+						src="https://maps.googleapis.com/maps/api/staticmap?markers={{site.location.lat}},{{site.location.long}}&zoom=13&size=640x480&scale=2&maptype=roadmap&key=AIzaSyCm_Kyfezuk3iz7-ya1pbwq-ELj17ZULPQ">
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		{% include footer.html %}
+	</footer>
+    {% include scripts.html %}
+</body>
+</html>

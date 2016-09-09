@@ -8,6 +8,10 @@ hero_content_markdown: |-
   &nbsp;
 
   ## Call Today: 301.439.0011
+
+  &nbsp;
+
+  Initial consultation $50
 hero_cta: En Espanol
 hero_link: /espanol.html
 banner_image: 'http://placehold.it/1200x400'

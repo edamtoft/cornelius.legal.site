@@ -16,7 +16,7 @@ location_description: |
   Enter at the back of the building, under the Lobby Entrance sign.
 location_button: Get Directions
 location_title: Location
-areas:
+areas_of_practice:
 -
   title: Immigration Law
   icon: bank

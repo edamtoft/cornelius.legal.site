@@ -1,6 +1,14 @@
-#main {
+.main {
   min-height: 1000px;
   line-height: 1.5em;
+}
+
+.hero {
+  min-height: 500px;
+  background-position: top center;
+  // background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navbar-brand {
@@ -46,8 +54,17 @@ h1 {
     border-radius: 0;
     border-style: none;
     margin-bottom: 0;
+    box-shadow: 0 3px 6px #222;
 }
 
+
+.navigation-header {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  color: #690A15;
+}
 
 .bg-dark {
   background-color: #eee;

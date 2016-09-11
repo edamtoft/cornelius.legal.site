@@ -8,3 +8,14 @@ city: Takoma Park
 state: MD
 zip: "20912"
 phone: "301.439.0011"
+# Configuration
+exclude:
+  - gulpfile.js
+  - package.json
+  - Gemfile
+  - _styles
+  - node_modules
+env: production
+gems:
+  - octopress-minify-html
+  - jekyll-sitemap

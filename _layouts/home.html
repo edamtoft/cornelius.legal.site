@@ -4,12 +4,12 @@
 <html>
 <head>
 	{% include head.html %}
-	<link rel="stylesheet" href="/css/home.css">
+	<style>{% include css/home.css %}</style>
 </head>
 <body>
 	{% include nav.html %}
-	<main id="main">
-		<section id="hero" class="flex-center navbar-pad" style="background-image:url('{{page.banner_image}}')">
+	<main class="main">
+		<section class="hero flex-center navbar-pad" style="background-image:url('{{page.banner_image}}')">
 			<div class="container">
 				<div class="col-sm-6 col-sm-offset-6 text-center translucent-block">
 					<h2 style="padding-bottom: 10px; border-bottom: 2px solid #690A15">{{page.hero_header}}</h2>
@@ -47,9 +47,7 @@
 					<a class="btn btn-default btn-block btn-lg" href="#"><i class="fa fa-map-marker"></i> {{page.location_button}}</a>
 				</div>
 				<div class="col-sm-6">
-					<img 
-						class="img-responsive"
-						src="https://maps.googleapis.com/maps/api/staticmap?markers={{site.location.lat}},{{site.location.long}}&zoom=13&size=640x480&scale=2&maptype=roadmap&key=AIzaSyCm_Kyfezuk3iz7-ya1pbwq-ELj17ZULPQ">
+					<img class="img-responsive"	src="https://maps.googleapis.com/maps/api/staticmap?markers={{site.location.lat}},{{site.location.long}}&zoom=13&size=640x480&scale=2&maptype=roadmap&key=AIzaSyCm_Kyfezuk3iz7-ya1pbwq-ELj17ZULPQ">
 				</div>
 			</div>
 		</section>

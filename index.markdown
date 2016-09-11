@@ -11,7 +11,7 @@ hero_content_markdown: |
   ## <i class="fa fa-phone"></i> Call Today: 301.439.0011
 hero_cta: En Espanol
 hero_link: "/espanol.html"
-banner_image: "http://placehold.it/1200x400"
+banner_image: http://media.istockphoto.com/photos/old-legal-books-spanish-law-reports-library-spain-picture-id494892724?s=2048x2048
 location_description_markdown: |
   Enter at the back of the building, under the Lobby Entrance sign.
 location_button: Get Directions

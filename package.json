@@ -1,0 +1,23 @@
+{
+  "name": "cornelius.legal.site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edamtoft/cornelius.legal.site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edamtoft/cornelius.legal.site/issues"
+  },
+  "homepage": "https://github.com/edamtoft/cornelius.legal.site#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}

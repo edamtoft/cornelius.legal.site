@@ -1,0 +1,95 @@
+body {
+  font-family: $body-font;
+  background-color: $background;
+  color: $dark;
+  font-size: 12pt;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  min-height: 800px;
+  line-height: 1.5em;
+  margin-top: 60px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a { 
+  text-decoration: none;
+  color: $primary;
+  &:visited {
+    color: darken($primary, 10%);
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  font-family: $header-font;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+}
+
+h1 {
+  font-size: 28pt;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.page-content {
+  h1, h2 {
+    color: darken($primary, 10%);
+    font-variant: small-caps;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    margin: 0 auto 2em auto;
+    padding: 10px;
+    background-color: $background;
+    box-shadow: 0 3px 6px $shadow;
+  }
+
+  p {
+    font-size: 14pt;
+  }
+}
+
+.off-white {
+  background-color: darken($background, 10%);
+}
+
+.dark {
+    background-color: $dark;
+    color: $background;
+}
+
+.border-bottom {
+  padding-bottom: 1em;
+  border-bottom: solid 3px darken($primary, 10%);
+}
+
+.border-top {
+  padding-top: 1em;
+  border-top: solid 3px darken($primary, 10%);
+}
+
+ul.list-unstyled {
+  padding-left: 0;
+  li { list-style: none; }
+}
+
+.primary {
+    color: darken($primary, 10%);
+    &.hoverable:hover {
+        color: $primary;
+    }
+}

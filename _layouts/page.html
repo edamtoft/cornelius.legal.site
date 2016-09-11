@@ -9,16 +9,14 @@
 	{% include nav.html %}
 	<main class="main">
 		{% if page.banner_image %}
-		<header class="hero navbar-pad" style="background-image:url('{{page.banner_image}}')">
+		<header class="hero" style="background-image:url('{{page.banner_image}}')">
 		</header>
 		{% endif %}
 		<article class="container page-content" style="padding-top: 1em; padding-bottom: 2em;">
         	{{ content }}
 		</article>
 	</main>
-	<footer>
-		{% include footer.html %}
-	</footer>
+    {% include footer.html %}
     {% include scripts.html %}
 </body>
 </html>

@@ -1,23 +1,29 @@
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar">
     <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <i class="fa fa-bars"></i>
-          </button>
-          <a class="navbar-brand" href="/">{{ site.title }}</a>
+        <a class="logo" href="/"><img src="/assets/LogoTitle.png"/ alt="{{ site.title }}"></a>
+        <div class="links">
+            {% for navpage in site.pages %}
+            {% if navpage.url != '/' %}
+                <a href="{{navpage.url}}"{% if page.url == navpage.url %} class="active"{%endif%}>{{navpage.title}}</a>
+            {% endif %}
+            {% endfor %}
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                {% for page in site.pages %}
-                {% if page.url != '/' %}
-                    <li><a href="{{page.url}}">{{page.title}}</a></li>
-                {% endif %}
-                {% endfor %}
-                {% for post in site.posts %}
-                    <li><a href="{{post.url}}">{{post.title}}</a></li>
-                {% endfor %}
-
-            </ul>
+        <div class="icons">
+            <a target="_blank" href="https://www.google.com/maps/place/{{site.address|uri_escape}}+{{site.city|uri_escape}}+{{site.state|uri_escape}}"><i class="fa fa-map-marker"></i></a>
+            <a target="_blank" href="tel:{{site.phone}}"><i class="fa fa-phone"></i></a>
+            <button class="nav-toggle"><i class="fa fa-bars"></i></button>
+        </div>
+    </div>
+</nav>
+<nav class="offcanvas-nav">
+    <div>
+        <h2 class="border-bottom"><a href="{{page.url}}">{{site.title}}</a></h2>
+        <div class="links">
+            {% for page in site.pages %}
+            {% if page.url != '/' %}
+                <a href="{{page.url}}">{{page.title}}</a>
+            {% endif %}
+            {% endfor %}
         </div>
     </div>
 </nav>

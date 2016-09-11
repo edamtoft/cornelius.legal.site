@@ -1,0 +1,45 @@
+.button {
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    box-shadow: 0 3px 6px $shadow inset;
+  }
+
+  &.ghost {
+    position: relative;
+    border: solid 1px #fff;
+    color: $background;
+    transition: top 250ms;
+    &:active {
+      top: 1px;
+    }
+  }
+
+  &.primary {
+    border: solid 1px $primary;
+    background-color: darken($primary, 5%);
+    color: $background;
+    &:hover {
+      background-color: $primary;
+    }
+    &:active {
+      background-color: lighten($primary, 5%);
+    }
+  }
+
+  &.secondary {
+    border: solid 1px $secondary;
+    background-color: darken($secondary, 5%);
+    color: $background;
+    &:hover {
+      background-color: $secondary;
+    }
+    &:active {
+      background-color: lighten($secondary, 5%);
+    }
+  }
+}

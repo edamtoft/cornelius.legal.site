@@ -1,0 +1,131 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: $background;
+    color: $primary;
+    box-shadow: 0 3px 6px $shadow;
+    font-family: $header-font;
+    font-variant: small-caps;
+    .container {
+      display: flex;
+      flex-direction: row;
+    }
+    .links {
+      display: none;
+      flex-direction: row;
+      margin: 0;
+      a {
+        font-size: 14pt;
+        color: $primary;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0 1em;
+        text-decoration: none;
+      }
+      a:hover, a:active, a.active {
+        color: $background;
+        background-color: darken($primary, 10%);
+      }
+
+      @media only screen and (min-width: $breakpoint-small) {
+        display: flex;
+      }
+    }
+
+    .logo {
+      display: block;
+      margin: 5px 15px 5px 5px;
+    }
+
+    .icons {
+      margin-left: auto;
+      display: flex; 
+      flex-direction: row;
+      align-content: center;
+      align-items: center;
+      font-size: 16pt;
+      @media only screen and (min-width: $breakpoint-small) {
+        display: none;
+      }
+      a, button {
+        padding: 10px;
+      }
+    }
+
+    .nav-toggle {
+      border: none;
+      color: $primary;
+      background: none;
+      cursor: pointer;
+    }
+}
+
+.offcanvas-nav {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  transition: left 0.5s;
+  background-color: $background;
+  font-family: $header-font;
+  font-variant: small-caps;
+  box-shadow: 3px 0 6px $shadow;
+  z-index: 200;
+  padding-top: 1em; 
+
+  width: 75%;
+  left: -80%;
+
+  @media only screen and (min-width: $breakpoint-small) {
+    width: 50%;
+    left: -55%;
+  }
+
+  @media only screen and (min-width: $breakpoint-large) {
+    width: 25%;
+    left: -30%;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    a {
+      font-size: 14pt;
+      color: $primary;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      padding: 0.5em 1em;
+      text-decoration: none;
+    }
+    a:hover, a:active, a.active {
+      color: $background;
+      background-color: darken($primary, 10%);
+    }
+  }
+}
+
+.offcanvas-fade {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: $dark;
+  opacity: 0.5;
+  animation: fadein 1s;
+  top: 0;
+  left: 0;
+  z-index: 199;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 0.5; }
+}
+
+.offcanvas-nav.active {
+  left: 0;
+}

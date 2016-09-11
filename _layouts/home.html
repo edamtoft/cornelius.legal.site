@@ -4,27 +4,30 @@
 <html>
 <head>
 	{% include head.html %}
-	<style>{% include css/home.css %}</style>
 </head>
 <body>
 	{% include nav.html %}
 	<main class="main">
-		<section class="hero flex-center navbar-pad" style="background-image:url('{{page.banner_image}}')">
+		<section class="hero" style="background-image: url('{{page.banner_image}}')">
 			<div class="container">
-				<div class="col-sm-6 col-sm-offset-6 text-center translucent-block">
-					<h2 style="padding-bottom: 10px; border-bottom: 2px solid #690A15">{{page.hero_header}}</h2>
-					{{page.hero_content_markdown | markdownify }}
-					<a class="btn btn-default btn-block btn-lg" href="{{page.hero_link}}">{{page.hero_cta}}</a>
+				<div class="col-6 text-center translucent-block secondary">
+					<div class="content">
+						<h2 style="padding-bottom: 10px; border-bottom: 2px solid #690A15">{{page.hero_header}}</h2>
+						{{page.hero_content_markdown | markdownify }}
+						<a class="button ghost" href="{{page.hero_link}}">{{page.hero_cta}}</a>
+					</div>
 				</div>
 			</div>
 		</section>
-		<section class="bg-dark">
+		<section class="off-white border-bottom">
 			<div class="container">
 				<div class="row">
 					{% for area in page.areas_of_practice %}
-						<div class="col-sm-4 text-center">
-							<h1><i class="fa fa-4x fa-{{area.icon}}"></i></h1>
-							<h3>{{area.title}}</h3>
+						<div class="col-4 text-center">
+							<a class="primary hoverable" href="{{area.link}}">
+								<h1><i class="fa fa-4x fa-{{area.icon}}"></i></h1>
+								<h3>{{area.title}}</h3>
+							</a>
 							<p>{{area.description_markdown | markdownify}}</p>
 						</div>
 					{% endfor %}
@@ -35,26 +38,9 @@
         	{{ content }}
 		</section>
 		<img src="https://s3.amazonaws.com/cornelius.legal/20151020_152643+(1).jpg" width="100%">
-		<section class="container" style="padding-top: 1em; padding-bottom: 2em;">
-			<div class="row">
-				<div class="col-sm-6 text-center">
-					<h2>{{page.location_title}}</h2>
-					<h3>
-						{{site.address}}<br/>
-						{{site.city}}, {{site.state}} {{site.zip}}
-					</h3>
-					<p>{{page.location_description_markdown | markdownify}}</p>
-					<a class="btn btn-default btn-block btn-lg" href="#"><i class="fa fa-map-marker"></i> {{page.location_button}}</a>
-				</div>
-				<div class="col-sm-6">
-					<img class="img-responsive"	src="https://maps.googleapis.com/maps/api/staticmap?markers={{site.location.lat}},{{site.location.long}}&zoom=13&size=640x480&scale=2&maptype=roadmap&key=AIzaSyCm_Kyfezuk3iz7-ya1pbwq-ELj17ZULPQ">
-				</div>
-			</div>
-		</section>
+		{% include location.html %}
 	</main>
-	<footer>
-		{% include footer.html %}
-	</footer>
+    {% include footer.html %}
     {% include scripts.html %}
 </body>
 </html>

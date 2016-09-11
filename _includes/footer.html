@@ -1,17 +1,29 @@
-<div class="footer bg-dark">
+<footer class="footer dark border-top">
   <div class="container">
     <div class="row">
-      <div class="col-sm-4">
+      <div class="col-4">
+        <h4><a class="inverse hoverable" href="/">{{site.title}}</a></h4>
         <ul class="list-unstyled">
-            {% for page in site.pages %}
-                <li><a href="{{page.url}}">{{page.title}}</a></li>
+            {% for navpage in site.pages %}
+                <li><a class="inverse hoverable{% if page.url == navpage.url %} active{%endif%}" href="{{navpage.url}}">{{navpage.title}}</a></li>
             {% endfor %}
         </ul>
       </div>
-      <div class="col-sm-4">
+      <div class="col-4">
+        {% for disclaimer in site.legal %}
+          <h4>{{disclaimer.title}}</h4>
+          <div class="inverse disclaimer">{{disclaimer.disclaimer_markdown | markdownify}}</div>
+        {% endfor %}
       </div>
-      <div class="col-sm-4">
+      <div class="col-4">
+        <ul class="list-unstyled">
+          <li><i class="fa fa-phone"></i>:
+            <a target="_blank" class="inverse hoverable" href="tel:{{site.phone}}">{{site.phone}}</a></li>
+          <li><i class="fa fa-map-marker"></i>: 
+            <a target="_blank" class="inverse hoverable" href="https://www.google.com/maps/place/{{site.address|uri_escape}}+{{site.city|uri_escape}}+{{site.state|uri_escape}}}">{{site.address}}
+            <br />{{site.city}}, {{site.state}} {{site.zip}}</a></li>
+        </ul>
       </div>
     </div>
   </div>
-</div>
+</footer>

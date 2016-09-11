@@ -1,0 +1,19 @@
+.footer {
+    min-height: 250px;
+   
+   .inverse {
+        color: $background;
+        &.hoverable.active {
+            color: $primary;
+        }
+        &.hoverable:hover {
+            color: $primary;
+        }
+    }
+
+    .disclaimer {
+        font-size: 9pt;
+        line-height: 1.2em;
+    }
+}
+

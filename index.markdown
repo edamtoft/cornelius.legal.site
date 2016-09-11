@@ -14,7 +14,7 @@ hero_content_markdown: |-
   Initial consultation $50
 hero_cta: En Espanol
 hero_link: "/espanol.html"
-banner_image: http://media.istockphoto.com/photos/old-legal-books-spanish-law-reports-library-spain-picture-id494892724?s=2048x2048
+banner_image: /assets/books.jpg
 location_description_markdown: |
   Enter at the back of the building, under the Lobby Entrance sign.
 location_button: Get Directions
@@ -23,14 +23,16 @@ areas_of_practice:
   - title: Immigration Law
     icon: bank
     description_markdown: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra bibendum ultricies. Maecenas sed euismod turpis, id dignissim lorem.'
+    link: '#'
   - title: Employment Stuff
     icon: balance-scale
     description_markdown: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra bibendum ultricies. Maecenas sed euismod turpis, id dignissim lorem.'
+    link: '#'
   - title: Other Stuff
     icon: gavel
     description_markdown: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra bibendum ultricies. Maecenas sed euismod turpis, id dignissim lorem.'
+    link: '#'
 ---
-
 
 # Law Office of Linda Cornelius
 

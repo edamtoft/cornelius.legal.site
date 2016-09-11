@@ -8,7 +8,13 @@ city: Takoma Park
 state: MD
 zip: "20912"
 phone: "301.439.0011"
+legal:
+  - title: Disclaimer
+    disclaimer_markdown: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mollis vitae diam et finibus. Donec maximus ac tortor in commodo. Maecenas ultricies enim dui, bibendum egestas neque pellentesque id.'
+  - title: Disclaimer 2
+    disclaimer_markdown: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mollis vitae diam et finibus. Donec maximus ac tortor in commodo. Maecenas ultricies enim dui, bibendum egestas neque pellentesque id.'
 # Configuration
+permalink: "/:slug"
 exclude:
   - gulpfile.js
   - package.json

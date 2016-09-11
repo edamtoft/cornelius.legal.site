@@ -13,16 +13,10 @@ hero_content_markdown: |-
 
   Initial consultation $50
 hero_cta: En Espanol
-<<<<<<< HEAD
 hero_link: "/espanol.html"
 banner_image: http://media.istockphoto.com/photos/old-legal-books-spanish-law-reports-library-spain-picture-id494892724?s=2048x2048
 location_description_markdown: |
   Enter at the back of the building, under the Lobby Entrance sign.
-=======
-hero_link: /espanol.html
-banner_image: 'http://placehold.it/1200x400'
-location_description_markdown: 'Enter at the back of the building, under the Lobby Entrance sign.'
->>>>>>> origin/master
 location_button: Get Directions
 location_title: Location
 areas_of_practice:

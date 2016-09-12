@@ -9,8 +9,8 @@
             {% endfor %}
         </div>
         <div class="icons">
-            <a target="_blank" href="https://www.google.com/maps/place/{{site.address|uri_escape}}+{{site.city|uri_escape}}+{{site.state|uri_escape}}"><i class="fa fa-map-marker"></i></a>
-            <a target="_blank" href="tel:{{site.phone}}"><i class="fa fa-phone"></i></a>
+            <a target="_blank" href="https://www.google.com/maps/place/{{site.data.seo.address|uri_escape}}+{{site.data.seo.city|uri_escape}}+{{site.data.seo.state|uri_escape}}"><i class="fa fa-map-marker"></i></a>
+            <a target="_blank" href="tel:{{site.data.seo.phone}}"><i class="fa fa-phone"></i></a>
             <button class="nav-toggle"><i class="fa fa-bars"></i></button>
         </div>
     </div>

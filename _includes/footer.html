@@ -10,7 +10,7 @@
         </ul>
       </div>
       <div class="col-4">
-        {% for disclaimer in site.legal %}
+        {% for disclaimer in site.data.seo.legal %}
           <h4>{{disclaimer.title}}</h4>
           <div class="inverse disclaimer">{{disclaimer.disclaimer_markdown | markdownify}}</div>
         {% endfor %}
@@ -18,10 +18,9 @@
       <div class="col-4">
         <ul class="list-unstyled">
           <li><i class="fa fa-phone"></i>:
-            <a target="_blank" class="inverse hoverable" href="tel:{{site.phone}}">{{site.phone}}</a></li>
+            <a target="_blank" class="inverse hoverable" href="tel:{{site.data.seo.phone}}">{{site.data.seo.phone}}</a></li>
           <li><i class="fa fa-map-marker"></i>: 
-            <a target="_blank" class="inverse hoverable" href="https://www.google.com/maps/place/{{site.address|uri_escape}}+{{site.city|uri_escape}}+{{site.state|uri_escape}}}">{{site.address}}
-            <br />{{site.city}}, {{site.state}} {{site.zip}}</a></li>
+            <br />{{site.data.seo.city}}, {{site.data.seo.state}} {{site.data.seo.zip}}</a></li>
         </ul>
       </div>
     </div>

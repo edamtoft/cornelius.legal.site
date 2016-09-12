@@ -3,14 +3,16 @@
     <div class="col-6 text-center">
       <h2 class="primary">{{page.location_title}}</h2>
       <h3>
-        {{site.address}}<br/>
-        {{site.city}}, {{site.state}} {{site.zip}}
+        {{site.data.seo.address}}<br/>
+        {{site.data.seo.city}}, {{site.data.seo.state}} {{site.data.seo.zip}}
       </h3>
       <p>{{page.location_description_markdown | markdownify}}</p>
-      <a class="button primary" href="https://www.google.com/maps/place/{{site.data.seo.address|uri_escape}}+{{site.data.seo.city|uri_escape}}+{{site.data.seo.state|uri_escape}}"><i class="fa fa-map-marker"></i> {{page.location_button}}</a>
+      <a class="button primary" target="_blank" href="https://www.google.com/maps/place/{{site.data.seo.address|uri_escape}}+{{site.data.seo.city|uri_escape}}+{{site.data.seo.state|uri_escape}}"><i class="fa fa-map-marker"></i> {{page.location_button}}</a>
     </div>
     <div class="col-6">
-      <img class="img-responsive"	src="https://maps.googleapis.com/maps/api/staticmap?markers={{site.data.seo.location.lat}},{{site.data.seo.location.long}}&zoom=13&size=640x480&scale=2&maptype=roadmap&key=AIzaSyCm_Kyfezuk3iz7-ya1pbwq-ELj17ZULPQ">
+      <a target="_blank" href="https://www.google.com/maps/place/{{site.data.seo.address|uri_escape}}+{{site.data.seo.city|uri_escape}}+{{site.data.seo.state|uri_escape}}">
+        <img class="img-responsive"	src="https://maps.googleapis.com/maps/api/staticmap?markers={{site.data.seo.location.lat}},{{site.data.seo.location.long}}&zoom=13&size=640x480&scale=2&maptype=roadmap&key=AIzaSyCm_Kyfezuk3iz7-ya1pbwq-ELj17ZULPQ">
+      </a>
     </div>
   </div>
 </section>

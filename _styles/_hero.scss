@@ -14,14 +14,13 @@
   }
 
   .translucent-block {
+    color: $background;
     &.primary {
       background-color: transparentize($primary, 0.15);
     }
     &.secondary {
       background-color: transparentize($secondary, 0.15);
     }
-    margin-top: 1em;
-    color: $background;
     @media only screen and (min-width: $breakpoint-med) {
       margin-left: 50%;
     }

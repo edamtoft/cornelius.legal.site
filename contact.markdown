@@ -9,4 +9,4 @@ location_title: Location
 
 # Contact Us
 
-To schedule an initial consultation, call our office at 301.439.0011.
+To schedule an initial consultation, call our office at 301.439.0011, of fill out the form below and we will call you.

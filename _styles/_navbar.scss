@@ -105,6 +105,20 @@
     a:hover, a:active, a.active {
       color: $background;
       background-color: darken($primary, 10%);
+      background: linear-gradient(90deg,darken($primary, 10%),$primary);
+    }
+  }
+
+  .icon-links {
+    a {
+      font-size: 12pt;
+      color: darken($primary, 10%);
+      padding: 0.5em 1em;
+    }
+    a:hover, a:active, a.active {
+      color: $background;
+      background-color: darken($primary, 10%);
+      background: linear-gradient(90deg,darken($primary, 10%),$primary);
     }
   }
 }

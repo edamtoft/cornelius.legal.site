@@ -43,6 +43,8 @@ img {
 }
 
 .page-content {
+  line-height: 2em;
+
   h1, h2 {
     color: darken($primary, 10%);
     font-variant: small-caps;
@@ -73,15 +75,10 @@ img {
     color: $background;
 }
 
-.border-bottom {
-  padding-bottom: 1em;
-  border-bottom: solid 3px darken($primary, 10%);
-}
-
-.border-top {
-  padding-top: 1em;
-  border-top: solid 3px darken($primary, 10%);
-}
+.border-bottom { border-bottom: solid 3px darken($primary, 10%); }
+.border-top { border-top: solid 3px darken($primary, 10%); }
+.pad-bottom { padding-bottom: 1em; }
+.pad-top { padding-top: 1em; }
 
 ul.list-unstyled {
   padding-left: 0;
@@ -93,4 +90,19 @@ ul.list-unstyled {
     &.hoverable:hover {
         color: $primary;
     }
+}
+
+.distribute {
+  width: 100%;
+  display: flex;
+  &.horizontally {
+    flex-direction: row;
+  }
+  &.vertically {
+    flex-direction: column;
+  }
+  .item {
+    flex-grow: 1;
+    text-align: center;
+  }
 }

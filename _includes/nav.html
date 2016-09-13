@@ -9,21 +9,24 @@
             {% endfor %}
         </div>
         <div class="icons">
-            <a target="_blank" href="https://www.google.com/maps/place/{{site.data.seo.address|uri_escape}}+{{site.data.seo.city|uri_escape}}+{{site.data.seo.state|uri_escape}}"><i class="fa fa-map-marker"></i></a>
             <a target="_blank" href="tel:{{site.data.seo.phone}}"><i class="fa fa-phone"></i></a>
             <button class="nav-toggle"><i class="fa fa-bars"></i></button>
         </div>
     </div>
 </nav>
 <nav class="offcanvas-nav">
-    <div>
-        <h2 class="border-bottom"><a href="{{page.url}}">{{site.title}}</a></h2>
-        <div class="links">
-            {% for page in site.pages %}
-            {% if page.url != '/' %}
-                <a href="{{page.url}}">{{page.title}}</a>
-            {% endif %}
-            {% endfor %}
+    <div class="border-bottom">
+        <h2><a href="{{page.url}}">{{site.title}}</a></h2>
+        <div class="distribute horizontally icon-links">
+            <a class="item" target="_blank" href="tel:{{site.data.seo.phone}}"><i class="fa fa-phone"></i> Call Now</a>
+            <a class="item" target="_blank" href="https://www.google.com/maps/place/{{site.data.seo.address|uri_escape}}+{{site.data.seo.city|uri_escape}}+{{site.data.seo.state|uri_escape}}"><i class="fa fa-map"></i> Directions</a>
         </div>
+    </div>
+    <div class="links">
+        {% for page in site.pages %}
+        {% if page.url != '/' %}
+            <a href="{{page.url}}">{{page.title}}</a>
+        {% endif %}
+        {% endfor %}
     </div>
 </nav>

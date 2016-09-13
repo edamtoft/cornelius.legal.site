@@ -3,8 +3,8 @@
     top: 0;
     z-index: 100;
     width: 100%;
-    background-color: $background;
-    color: $primary;
+    background-color: $nav-background;
+    color: $nav-foreground;
     box-shadow: 0 3px 6px $shadow;
     font-family: $header-font;
     font-variant: small-caps;
@@ -18,7 +18,7 @@
       margin: 0;
       a {
         font-size: 14pt;
-        color: $primary;
+        color: $nav-foreground;
         display: flex;
         align-items: center;
         height: 100%;
@@ -26,8 +26,8 @@
         text-decoration: none;
       }
       a:hover, a:active, a.active {
-        color: $background;
-        background-color: darken($primary, 10%);
+        color: $nav-background;
+        background-color: darken($nav-foreground, 10%);
       }
 
       @media only screen and (min-width: $breakpoint-small) {
@@ -57,7 +57,7 @@
 
     .nav-toggle {
       border: none;
-      color: $primary;
+      color: $nav-foreground;
       background: none;
       cursor: pointer;
     }
@@ -68,7 +68,7 @@
   top: 0;
   height: 100%;
   transition: left 0.5s;
-  background-color: $background;
+  background-color: $nav-background;
   font-family: $header-font;
   font-variant: small-caps;
   box-shadow: 3px 0 6px $shadow;
@@ -95,7 +95,7 @@
     padding: 0;
     a {
       font-size: 14pt;
-      color: $primary;
+      color: $nav-foreground;
       display: flex;
       align-items: center;
       height: 100%;
@@ -103,22 +103,22 @@
       text-decoration: none;
     }
     a:hover, a:active, a.active {
-      color: $background;
-      background-color: darken($primary, 10%);
-      background: linear-gradient(90deg,darken($primary, 10%),$primary);
+      color: $nav-background;
+      background-color: darken($nav-foreground, 10%);
+      background: linear-gradient(90deg,darken($nav-foreground, 10%),$nav-foreground);
     }
   }
 
   .icon-links {
     a {
       font-size: 12pt;
-      color: darken($primary, 10%);
+      color: darken($nav-foreground, 10%);
       padding: 0.5em 1em;
     }
     a:hover, a:active, a.active {
-      color: $background;
-      background-color: darken($primary, 10%);
-      background: linear-gradient(90deg,darken($primary, 10%),$primary);
+      color: $nav-background;
+      background-color: darken($nav-foreground, 10%);
+      background: linear-gradient(90deg,darken($nav-foreground, 10%),$nav-foreground);
     }
   }
 }

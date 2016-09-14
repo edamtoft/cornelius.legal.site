@@ -32,10 +32,10 @@
 
   &.light {
     border-bottom: solid 2px darken($light, 25%);
-    background: linear-gradient(0,darken($light,5%),$light);
+    background: linear-gradient(0,$light,lighten($light,5%));
     color: $primary!important;
     &:hover {
-      background: linear-gradient(0,$light,lighten($light,5%));
+      background: linear-gradient(0,lighten($light,5%),lighten($light,10%));
     }
     &:active {
       background: linear-gradient(0,$light,darken($light,5%));

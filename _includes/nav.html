@@ -24,7 +24,7 @@
     </div>
     <div class="links">
         {% for page in site.pages %}
-        {% if page.url != '/' %}
+        {% if page.include_in_navigation %}
             <a href="{{page.url}}">{{page.title}}</a>
         {% endif %}
         {% endfor %}

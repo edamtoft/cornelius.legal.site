@@ -32,18 +32,15 @@ areas_of_practice:
     icon: gavel
     description_markdown: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra bibendum ultricies. Maecenas sed euismod turpis, id dignissim lorem.'
     link: '#'
+include_in_navigation: true
 ---
 
 # Law Office of Linda Cornelius
+
+![Linda Cornelius](/assets/lindacornelius.jpg)
 
 I am an attorney who practiced law for more than nine years with non-profit organizations.
 
 My Education: Grinnell College, University of Michigan Law School
 
 Admitted to practice law in Maryland and Michigan. Member of the Maryland State Bar Association, the Bar Association of Montgomery County, Maryland, the State Bar of Michigan, and the American Immigration Lawyers Association.
-
-![Alt-text](http://placehold.it/600x400)
-
-## About
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis facilisis porttitor congue. Etiam eget auctor mi. In dictum semper urna, nec accumsan arcu volutpat ut. In hac habitasse platea dictumst. Nam sit amet libero bibendum, pellentesque ex in, convallis turpis. Suspendisse potenti. Vestibulum dapibus rhoncus sapien ut pretium. Etiam et ligula pharetra, eleifend mi ut, fermentum orci. Maecenas pulvinar ex sed congue posuere.

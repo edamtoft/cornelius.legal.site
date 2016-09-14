@@ -1,5 +1,5 @@
 ---
-title: Espanol
+title: Español
 layout: home
 hero_header: "When Removal Threatens Your Family, Don't Go To Court Alone."
 hero_content_markdown: |-
@@ -27,19 +27,16 @@ areas_of_practice:
     icon: gavel
     description_markdown: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra bibendum ultricies. Maecenas sed euismod turpis, id dignissim lorem.'
     link: '#'
+include_in_navigation: true
 ---
 
 
 # Law Office of Linda Cornelius
+
+![Linda Cornelius](/assets/lindacornelius.jpg)
 
 Por m&aacute;s de nueve a&ntilde;os, he practicado leyes con organizaciones sin fines de lucro.
 
 Educaci&oacute;n: Grinnell College, Universidad de Michigan Escuela de Derecho Licenciada para practicar Leyes en Maryland y Michigan.
 
 Miembro de la Asociaci&oacute;n de Abogados de Maryland “Maryland State Bar Association”, El Colegio de Abogados del Condado de Montgomery, Maryland “The Bar Association of Montgomery County, Maryland”, El Colegio de Abogados del Estado de Michigan “State Bar of Michigan”, y El Colegio de Abogados de Inmigraci&oacute;n Americano “American Immigration Lawyers Association”.
-
-![Alt-text](http://placehold.it/600x400)
-
-## Acerca De
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis facilisis porttitor congue. Etiam eget auctor mi. In dictum semper urna, nec accumsan arcu volutpat ut. In hac habitasse platea dictumst. Nam sit amet libero bibendum, pellentesque ex in, convallis turpis. Suspendisse potenti. Vestibulum dapibus rhoncus sapien ut pretium. Etiam et ligula pharetra, eleifend mi ut, fermentum orci. Maecenas pulvinar ex sed congue posuere.

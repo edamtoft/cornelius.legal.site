@@ -5,6 +5,7 @@ location_description_markdown: |
   Enter at the back of the building, under the Lobby Entrance sign.
 location_button: Get Directions
 location_title: Location
+include_in_navigation: true
 ---
 
 # Contact Us

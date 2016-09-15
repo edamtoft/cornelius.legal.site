@@ -13,15 +13,9 @@
   }
 }
 
-.button {
+.ripple {
   position: relative;
-  display: block;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 3px;
   overflow: hidden;
-  transition: transform 150ms, box-shadow 150ms;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 
   &::before {
@@ -44,12 +38,33 @@
     animation: ripple .4s ease-out;
   }
 
+  &.light::before {
+    background: darken($light, 5%);
+  }
+
+  &.dark::before {
+    background: lighten($dark, 5%);
+  }
+
+  &.primary::before {
+    background: lighten($primary, 5%);
+  }
+}
+
+.button {
+  position: relative;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  overflow: hidden;
+  transition: transform 150ms, box-shadow 150ms;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+
   &.light {
     background: $light;
     color: $primary!important;
-    &::before {
-      background: darken($light, 5%);
-    }
     &:hover {
       transform: translateY(-3px);
       box-shadow: 0 3px 0 darken($light, 25%);
@@ -59,9 +74,6 @@
   &.dark {
     background: $dark;
     color: $light!important;
-    &::before {
-      background: lighten($dark, 5%);
-    }
     &:hover {
       transform: translateY(-3px);
       box-shadow: 0 3px 0 lighten($dark, 10%);
@@ -71,9 +83,6 @@
   &.primary {
     background: $primary;
     color: $background!important;
-    &::before {
-      background: lighten($primary, 5%);
-    }
     &:hover {
       transform: translateY(-3px);
       box-shadow: 0 3px 0 lighten($primary, 10%);

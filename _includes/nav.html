@@ -1,16 +1,16 @@
 <nav class="navbar">
     <div class="container">
-        <a class="logo" href="/"><img src="/assets/LogoTitle.png"/ alt="{{ site.title }}"></a>
+        <a class="logo" href="/"><img src="/assets/LogoTitle.png"/ alt="{{ site.title }}" itemprop="logo"></a>
         <div class="links">
             {% for navpage in site.pages %}
             {% if navpage.include_in_navigation %}
-                <a href="{{navpage.url}}"{% if page.url == navpage.url %} class="active"{%endif%}>{{navpage.title}}</a>
+                <a href="{{navpage.url}}" class="primary ripple{% if page.url == navpage.url %} active{%endif%}">{{navpage.title}}</a>
             {% endif %}
             {% endfor %}
         </div>
         <div class="icons">
-            <a target="_blank" href="tel:{{site.data.seo.phone}}"><i class="fa fa-phone"></i></a>
-            <button class="nav-toggle"><i class="fa fa-bars"></i></button>
+            <a target="_blank" href="tel:{{site.data.seo.phone}}" class="light ripple"><i class="fa fa-phone"></i></a>
+            <button class="nav-toggle light ripple"><i class="fa fa-bars"></i></button>
         </div>
     </div>
 </nav>

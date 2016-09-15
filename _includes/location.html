@@ -2,12 +2,12 @@
   <div class="row">
     <div class="col-6 text-center">
       <h2 class="primary">{{page.location_title}}</h2>
-      <h3>
+      <h3 itemprop="address">
         {{site.data.seo.address}}<br/>
         {{site.data.seo.city}}, {{site.data.seo.state}} {{site.data.seo.zip}}
       </h3>
       <p>{{page.location_description_markdown | markdownify}}</p>
-      <a class="button primary" target="_blank" href="https://www.google.com/maps/place/{{site.data.seo.address|uri_escape}}+{{site.data.seo.city|uri_escape}}+{{site.data.seo.state|uri_escape}}"><i class="fa fa-map-marker"></i> {{page.location_button}}</a>
+      <a class="button primary ripple" target="_blank" href="https://www.google.com/maps/place/{{site.data.seo.address|uri_escape}}+{{site.data.seo.city|uri_escape}}+{{site.data.seo.state|uri_escape}}"><i class="fa fa-map-marker"></i> {{page.location_button}}</a>
     </div>
     <div class="col-6">
       <a target="_blank" href="https://www.google.com/maps/place/{{site.data.seo.address|uri_escape}}+{{site.data.seo.city|uri_escape}}+{{site.data.seo.state|uri_escape}}">

@@ -2,6 +2,7 @@
 title: Home
 layout: page
 include_in_navigation: false
+permalink: /404.html
 ---
 
 # Page Not Found

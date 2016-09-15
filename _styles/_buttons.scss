@@ -1,74 +1,59 @@
 .button {
+  position: relative;
   display: block;
   padding: 10px;
   text-align: center;
   text-decoration: none;
-  border-radius: 0 0 2px 2px;
-  box-shadow: 0 3px 6px $shadow;
+  border-radius: 3px;
+  transition: transform 150ms, box-shadow 150ms;
 
-  &.ghost {
-    border-color: $background;
-    border-bottom: solid 2px transparent;
-    color: $background!important;
-    &:active {
-      border-top: solid 1px transparent;
-      border-bottom: solid 1px transparent;
-    }
-  }
-
-  &.dark {
-    border-bottom: solid 2px lighten($dark, 5%);
-    background: linear-gradient(0,darken($dark,5%),$dark);
-    color: $background!important;
-    &:hover {
-      background: linear-gradient(0,$dark,lighten($dark,5%));
-    }
-    &:active {
-      background: linear-gradient(0,$dark,darken($dark,5%));
-      border-top: solid 1px transparent;
-      border-bottom: solid 1px lighten($dark, 5%);
-    }
-  }
+  // &.dark {
+  //   border-bottom: solid 2px lighten($dark, 5%);
+  //   background: linear-gradient(0,darken($dark,5%),$dark);
+  //   color: $background!important;
+  //   &:hover {
+  //     background: linear-gradient(0,$dark,lighten($dark,5%));
+  //   }
+  //   &:active {
+  //     background: linear-gradient(0,$dark,darken($dark,5%));
+  //     border-top: solid 1px transparent;
+  //     border-bottom: solid 1px lighten($dark, 5%);
+  //   }
+  // }
 
   &.light {
-    border-bottom: solid 2px darken($light, 25%);
     background: linear-gradient(0,$light,lighten($light,5%));
     color: $primary!important;
     &:hover {
-      background: linear-gradient(0,lighten($light,5%),lighten($light,10%));
+      transform: translateY(-3px);
+      box-shadow: 0 3px 0 darken($light, 25%);
     }
     &:active {
-      background: linear-gradient(0,$light,darken($light,5%));
-      border-top: solid 1px transparent;
-      border-bottom: solid 1px darken($light, 25%);
+      background: linear-gradient(0,lighten($light,5%),$light);
     }
   }
 
   &.primary {
-    border-bottom: solid 2px lighten($primary, 5%);
     background: linear-gradient(0,darken($primary,5%),$primary);
     color: $background!important;
     &:hover {
-      background: linear-gradient(0,$primary,lighten($primary,5%));
+      transform: translateY(-3px);
+      box-shadow: 0 3px 0 lighten($primary, 5%);
     }
     &:active {
       background: linear-gradient(0,$primary,darken($primary,5%));
-      border-top: solid 1px transparent;
-      border-bottom: solid 1px lighten($primary, 5%);
     }
   }
 
   &.secondary {
-    border-bottom: solid 2px lighten($secondary, 5%);
     background: linear-gradient(0,darken($secondary,5%),$secondary);
     color: $background!important;
     &:hover {
-      background: linear-gradient(0,$secondary,lighten($secondary,5%));
+      transform: translateY(-3px);
+      box-shadow: 0 3px 0 lighten($secondary, 5%);
     }
     &:active {
       background: linear-gradient(0,$secondary,darken($secondary,5%));
-      border-top: solid 1px;
-      border-bottom: solid 1px lighten($secondary, 5%);
     }
   }
 }

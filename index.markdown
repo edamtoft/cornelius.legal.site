@@ -13,7 +13,7 @@ hero_content_markdown: |-
 
   Initial consultation $50
 hero_cta: En Español
-hero_link: "/espanol.html"
+hero_link: "/espanol/"
 banner_image: /assets/books.jpg
 location_description_markdown: |
   Enter at the back of the building, under the Lobby Entrance sign.

@@ -1,6 +1,12 @@
 .footer {
     min-height: 250px;
    
+   li a {
+       display: block;
+       padding-top: 5px;
+       padding-bottom: 5px;
+   }
+
    .inverse {
         color: $background;
         &.hoverable.active {

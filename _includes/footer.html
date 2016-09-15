@@ -4,10 +4,15 @@
       <div class="col-4">
         <h4><a class="inverse hoverable" href="/">{{site.title}}</a></h4>
         <ul class="list-unstyled">
-          <li><i class="fa fa-phone"></i>:
-            <a target="_blank" class="inverse hoverable" href="tel:{{site.data.seo.phone}}">{{site.data.seo.phone}}</a></li>
-          <li><i class="fa fa-map-marker"></i>: 
-            <a target="_blank" class="inverse hoverable" href="https://www.google.com/maps/place/{{site.data.seo.address|uri_escape}}+{{site.data.seo.city|uri_escape}}+{{site.data.seo.state|uri_escape}}">{{site.data.seo.address}}
+          {% for navpage in site.pages %}
+          {% if navpage.include_in_navigation %}
+                <li><a class="inverse hoverable" href="{{navpage.url}}">{{navpage.title}}</a></li>
+          {% endif %}
+          {% endfor %}
+          <li>
+            <a target="_blank" class="inverse hoverable" href="tel:{{site.data.seo.phone}}"><i class="fa fa-phone"></i>: {{site.data.seo.phone}}</a></li>
+          <li>
+            <a target="_blank" class="inverse hoverable" href="https://www.google.com/maps/place/{{site.data.seo.address|uri_escape}}+{{site.data.seo.city|uri_escape}}+{{site.data.seo.state|uri_escape}}"><i class="fa fa-map-marker"></i>: {{site.data.seo.address}}
             <br />{{site.data.seo.city}}, {{site.data.seo.state}} {{site.data.seo.zip}}</a></li>
         </ul>
       </div>

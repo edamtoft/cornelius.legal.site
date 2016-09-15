@@ -3,6 +3,8 @@ title: Home
 layout: page
 include_in_navigation: false
 permalink: /404.html
+noindex: true
+sitemap: false
 ---
 
 # Page Not Found

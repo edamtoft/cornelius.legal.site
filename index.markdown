@@ -12,7 +12,7 @@ hero_content_markdown: |-
   &nbsp;
 
   Initial consultation $50
-hero_cta: En Espanol
+hero_cta: En Español
 hero_link: "/espanol.html"
 banner_image: /assets/books.jpg
 location_description_markdown: |
@@ -32,7 +32,7 @@ areas_of_practice:
     icon: gavel
     description_markdown: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra bibendum ultricies. Maecenas sed euismod turpis, id dignissim lorem.'
     link: '#'
-include_in_navigation: true
+include_in_navigation: false
 ---
 
 # Law Office of Linda Cornelius

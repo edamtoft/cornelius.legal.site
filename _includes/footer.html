@@ -4,9 +4,11 @@
       <div class="col-4">
         <h4><a class="inverse hoverable" href="/">{{site.title}}</a></h4>
         <ul class="list-unstyled">
-            {% for navpage in site.pages %}
-                <li><a class="inverse hoverable{% if page.url == navpage.url %} active{%endif%}" href="{{navpage.url}}">{{navpage.title}}</a></li>
-            {% endfor %}
+          <li><i class="fa fa-phone"></i>:
+            <a target="_blank" class="inverse hoverable" href="tel:{{site.data.seo.phone}}">{{site.data.seo.phone}}</a></li>
+          <li><i class="fa fa-map-marker"></i>: 
+            <a target="_blank" class="inverse hoverable" href="https://www.google.com/maps/place/{{site.data.seo.address|uri_escape}}+{{site.data.seo.city|uri_escape}}+{{site.data.seo.state|uri_escape}}">{{site.data.seo.address}}
+            <br />{{site.data.seo.city}}, {{site.data.seo.state}} {{site.data.seo.zip}}</a></li>
         </ul>
       </div>
       <div class="col-4">
@@ -16,13 +18,7 @@
         {% endfor %}
       </div>
       <div class="col-4">
-        <ul class="list-unstyled">
-          <li><i class="fa fa-phone"></i>:
-            <a target="_blank" class="inverse hoverable" href="tel:{{site.data.seo.phone}}">{{site.data.seo.phone}}</a></li>
-          <li><i class="fa fa-map-marker"></i>: 
-            <a target="_blank" class="inverse hoverable" href="https://www.google.com/maps/place/{{site.data.seo.address|uri_escape}}+{{site.data.seo.city|uri_escape}}+{{site.data.seo.state|uri_escape}}">{{site.data.seo.address}}
-            <br />{{site.data.seo.city}}, {{site.data.seo.state}} {{site.data.seo.zip}}</a></li>
-        </ul>
+        <img class="img-responsive" src="/assets/aila.jpg">
       </div>
     </div>
   </div>

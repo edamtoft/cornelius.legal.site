@@ -3,7 +3,7 @@
         <a class="logo" href="/"><img src="/assets/LogoTitle.png"/ alt="{{ site.title }}"></a>
         <div class="links">
             {% for navpage in site.pages %}
-            {% if navpage.url != '/' %}
+            {% if navpage.include_in_navigation %}
                 <a href="{{navpage.url}}"{% if page.url == navpage.url %} class="active"{%endif%}>{{navpage.title}}</a>
             {% endif %}
             {% endfor %}
@@ -23,9 +23,9 @@
         </div>
     </div>
     <div class="links">
-        {% for page in site.pages %}
-        {% if page.include_in_navigation %}
-            <a href="{{page.url}}">{{page.title}}</a>
+        {% for navpage in site.pages %}
+        {% if navpage.include_in_navigation %}
+            <a href="{{navpage.url}}"{% if page.url == navpage.url %} class="active"{%endif%}>{{navpage.title}}</a>
         {% endif %}
         {% endfor %}
     </div>

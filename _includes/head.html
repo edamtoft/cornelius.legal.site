@@ -1,11 +1,17 @@
+{% assign seo = site.data.seo %}
+{% assign address = site.data.seo.structured.address %}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="geo.position" content="{{site.data.seo.location.lat}},{{site.data.seo.location.long}}">
-<meta name="geo.region" content="{{site.data.seo.state}}">
-<meta name="geo.placename" content="{{site.data.seo.city}}">
-<meta name="description" content="{{site.data.seo.description_text}}">
-<meta name="abstract" content="{{site.data.seo.abstract_text}}">
+<meta name="geo.position" content="{{seo.structured.geo.latitude}},{{seo.structured.geo.longitude}}">
+<meta name="geo.region" content="{{address.addressRegion}}">
+<meta name="geo.placename" content="{{address.addressLocality}}">
+<meta name="description" content="{{seo.description_text}}">
+<meta name="abstract" content="{{seo.abstract_text}}">
 <meta name="theme-color" content="#7d070f">
-<title>{{ page.title }} - {{ site.title }} {{site.data.seo.city}},{{site.data.seo.state}}</title>
+<script type="application/ld+json">
+{{ seo.structured | jsonify  }}
+</script>
+<title>{{ page.title }} - {{ site.title }} {{address.addressLocality}}, {{address.addressRegion}}</title>
 <link rel="shortcut icon" href="/favicon.ico">
+<style>{% include css/site.css %}</style>
 

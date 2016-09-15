@@ -1,23 +1,12 @@
 ---
+layout: root
 ---
-<!DOCTYPE html>
-<html>
-<head>
-	{% include head.html %}
-	<style>{% include css/page.css %}</style>
-</head>
-<body itemscope itemtype="https://schema.org/Attorney">
-	{% include nav.html %}
-	<main class="main">
-		{% if page.banner_image %}
-		<header class="hero" style="background-image:url('{{page.banner_image}}')">
-		</header>
-		{% endif %}
-		<article class="container page-content" style="padding-top: 1em; padding-bottom: 2em;">
-        	{{ content }}
-		</article>
-	</main>
-    {% include footer.html %}
-    {% include scripts.html %}
-</body>
-</html>
+<main class="main">
+	{% if page.banner_image %}
+	<header class="hero" style="background-image:url('{{page.banner_image}}')">
+	</header>
+	{% endif %}
+	<article class="container page-content" style="padding-top: 1em; padding-bottom: 2em;">
+		{{ content }}
+	</article>
+</main>

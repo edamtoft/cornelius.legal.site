@@ -1,3 +1,5 @@
+{% assign address = site.data.seo.structured.address %}
+{% assign geo = site.data.seo.structured.geo %}
 <footer class="footer dark border-top">
   <div class="container">
     <div class="row">
@@ -6,14 +8,14 @@
         <ul class="list-unstyled">
           {% for navpage in site.pages %}
           {% if navpage.include_in_navigation %}
-                <li><a class="inverse hoverable" href="{{navpage.url}}">{{navpage.title}}</a></li>
+                <li><a class="inverse hoverable ripple dark" href="{{navpage.url}}">{{navpage.title}}</a></li>
           {% endif %}
           {% endfor %}
           <li>
-            <a target="_blank" class="inverse hoverable" href="tel:{{site.data.seo.phone}}"><i class="fa fa-phone"></i>: {{site.data.seo.phone}}</a></li>
+            <a target="_blank" class="inverse hoverable ripple dark" href="tel:{{seo.structured.telephone}}"><i class="fa fa-phone"></i>: {{seo.structured.telephone}}</a></li>
           <li>
-            <a target="_blank" class="inverse hoverable" href="https://www.google.com/maps/place/{{site.data.seo.address|uri_escape}}+{{site.data.seo.city|uri_escape}}+{{site.data.seo.state|uri_escape}}"><i class="fa fa-map-marker"></i>: {{site.data.seo.address}}
-            <br />{{site.data.seo.city}}, {{site.data.seo.state}} {{site.data.seo.zip}}</a></li>
+            <a target="_blank" class="inverse hoverable ripple dark" href="https://www.google.com/maps/place/{{address.streetAddress|uri_escape}}+{{address.addressLocality|uri_escape}}+{{address.addressRegion|uri_escape}}"><i class="fa fa-map-marker"></i>: {{address.streetAddress}}
+            <br/>{{address.addressLocality}}, {{address.addressRegion}} {{address.postalCode}}}</a></li>
         </ul>
       </div>
       <div class="col-4">
@@ -23,7 +25,7 @@
         {% endfor %}
       </div>
       <div class="col-4 text-center">
-        <img class="img-responsive" src="/assets/aila.jpg">
+        <img class="img-responsive" src="/assets/aila.jpg" alt="American Immigration Lawyers Association Member">
       </div>
     </div>
   </div>

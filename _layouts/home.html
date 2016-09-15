@@ -1,47 +1,36 @@
 ---
+layout: root
 ---
-<!DOCTYPE html>
-<html>
-<head>
-	{% include head.html %}
-	<style>{% include css/home.css %}</style>
-</head>
-<body itemscope itemtype="https://schema.org/Attorney">
-	{% include nav.html %}
-	<main class="main">
-		<section class="hero" style="background-image: url('{{page.banner_image}}')">
-			<div class="container row">
-				<div class="col-6 text-center translucent-block secondary">
-					<div class="content">
-						<h2 style="padding-bottom: 10px; border-bottom: 2px solid #690A15">{{page.hero_header}}</h2>
-						{{page.hero_content_markdown | markdownify }}
-						<a class="button light" href="{{page.hero_link}}">{{page.hero_cta}}</a>
+<main class="main">
+	<section class="hero" style="background-image: url('{{page.banner_image}}')">
+		<div class="container row">
+			<div class="col-6 text-center translucent-block secondary">
+				<div class="content">
+					<h2 style="padding-bottom: 10px; border-bottom: 2px solid #690A15">{{page.hero_header}}</h2>
+					{{page.hero_content_markdown | markdownify }}
+					<a class="button light" href="{{page.hero_link}}">{{page.hero_cta}}</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="off-white border-bottom">
+		<div class="container">
+			<div class="row">
+				{% for area in page.areas_of_practice %}
+					<div class="col-4 text-center">
+						<a class="primary hoverable" href="{{area.link}}">
+							<h1><i class="fa fa-4x fa-{{area.icon}}"></i></h1>
+							<h3>{{area.title}}</h3>
+						</a>
+						<p>{{area.description_markdown | markdownify}}</p>
 					</div>
-				</div>
+				{% endfor %}
 			</div>
-		</section>
-		<section class="off-white border-bottom">
-			<div class="container">
-				<div class="row">
-					{% for area in page.areas_of_practice %}
-						<div class="col-4 text-center">
-							<a class="primary hoverable" href="{{area.link}}">
-								<h1><i class="fa fa-4x fa-{{area.icon}}"></i></h1>
-								<h3>{{area.title}}</h3>
-							</a>
-							<p>{{area.description_markdown | markdownify}}</p>
-						</div>
-					{% endfor %}
-				</div>
-			</div>
-		</section>
-		<section class="container page-content" style="padding-top: 1em; padding-bottom: 2em;">
-        	{{ content }}
-		</section>
-		<img src="/assets/building.jpg" width="100%">
-		{% include location.html %}
-	</main>
-    {% include footer.html %}
-    {% include scripts.html %}
-</body>
-</html>
+		</div>
+	</section>
+	<section class="container page-content" style="padding-top: 1em; padding-bottom: 2em;">
+				{{ content }}
+	</section>
+	<img src="/assets/building.jpg" width="100%" alt="{{site.title}}">
+	{% include location.html %}
+</main>

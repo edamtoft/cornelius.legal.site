@@ -1,17 +1,19 @@
+{% assign address = site.data.seo.structured.address %}
+{% assign geo = site.data.seo.structured.geo %}
 <section class="container" style="padding-top: 1em; padding-bottom: 2em;">
   <div class="row">
     <div class="col-6 text-center">
       <h2 class="primary">{{page.location_title}}</h2>
-      <h3 itemprop="address">
-        {{site.data.seo.address}}<br/>
-        {{site.data.seo.city}}, {{site.data.seo.state}} {{site.data.seo.zip}}
+      <h3>
+        {{address.streetAddress}}<br/>
+        {{address.addressLocality}}, {{address.addressRegion}} {{address.postalCode}}
       </h3>
       <p>{{page.location_description_markdown | markdownify}}</p>
-      <a class="button primary ripple" target="_blank" href="https://www.google.com/maps/place/{{site.data.seo.address|uri_escape}}+{{site.data.seo.city|uri_escape}}+{{site.data.seo.state|uri_escape}}"><i class="fa fa-map-marker"></i> {{page.location_button}}</a>
+      <a class="button primary ripple" target="_blank" href="https://www.google.com/maps/place/{{address.streetAddress|uri_escape}}+{{address.addressLocality|uri_escape}}+{{address.addressRegion|uri_escape}}"><i class="fa fa-map-marker"></i> {{page.location_button}}</a>
     </div>
     <div class="col-6">
-      <a target="_blank" href="https://www.google.com/maps/place/{{site.data.seo.address|uri_escape}}+{{site.data.seo.city|uri_escape}}+{{site.data.seo.state|uri_escape}}">
-        <img class="img-responsive"	src="https://maps.googleapis.com/maps/api/staticmap?markers={{site.data.seo.location.lat}},{{site.data.seo.location.long}}&zoom=13&size=480x320&scale=1.5&maptype=roadmap&key=AIzaSyCm_Kyfezuk3iz7-ya1pbwq-ELj17ZULPQ">
+      <a target="_blank" href="https://www.google.com/maps/place/{{address.streetAddress|uri_escape}}+{{address.addressLocality|uri_escape}}+{{address.addressRegion|uri_escape}}">
+        <img class="img-responsive"	src="https://maps.googleapis.com/maps/api/staticmap?markers={{geo.latitude}},{{geo.longitude}}&zoom=13&size=480x320&scale=1.5&maptype=roadmap&key=AIzaSyCm_Kyfezuk3iz7-ya1pbwq-ELj17ZULPQ">
       </a>
     </div>
   </div>

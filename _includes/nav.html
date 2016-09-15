@@ -1,6 +1,9 @@
+{% assign seo = site.data.seo %}
+{% assign address = site.data.seo.structured.address %}
+{% assign geo = site.data.seo.structured.geo %}
 <nav class="navbar">
     <div class="container">
-        <a class="logo" href="/"><img src="/assets/LogoTitle.png"/ alt="{{ site.title }}" itemprop="logo"></a>
+        <a class="logo" href="/"><img src="/assets/LogoTitle.png"/ alt="{{ site.title }}"></a>
         <div class="links">
             {% for navpage in site.pages %}
             {% if navpage.include_in_navigation %}
@@ -9,7 +12,7 @@
             {% endfor %}
         </div>
         <div class="icons">
-            <a target="_blank" href="tel:{{site.data.seo.phone}}" class="light ripple"><i class="fa fa-phone"></i></a>
+            <a target="_blank" href="tel:{{seo.structured.telephone}}" class="light ripple"><i class="fa fa-phone"></i></a>
             <button class="nav-toggle light ripple"><i class="fa fa-bars"></i></button>
         </div>
     </div>
@@ -18,14 +21,14 @@
     <div class="border-bottom">
         <h2><a href="{{page.url}}">{{site.title}}</a></h2>
         <div class="distribute horizontally icon-links">
-            <a class="item" target="_blank" href="tel:{{site.data.seo.phone}}"><i class="fa fa-phone"></i> Call Now</a>
-            <a class="item" target="_blank" href="https://www.google.com/maps/place/{{site.data.seo.address|uri_escape}}+{{site.data.seo.city|uri_escape}}+{{site.data.seo.state|uri_escape}}"><i class="fa fa-map"></i> Directions</a>
+            <a class="item" target="_blank" href="tel:{{seo.structured.telephone}}"><i class="fa fa-phone"></i> Call Now</a>
+            <a class="item" target="_blank" href="https://www.google.com/maps/place/{{address.streetAddress|uri_escape}}+{{address.addressLocality|uri_escape}}+{{address.addressRegion|uri_escape}}"><i class="fa fa-map"></i> Directions</a>
         </div>
     </div>
     <div class="links">
         {% for navpage in site.pages %}
         {% if navpage.include_in_navigation %}
-            <a href="{{navpage.url}}"{% if page.url == navpage.url %} class="active"{%endif%}>{{navpage.title}}</a>
+            <a href="{{navpage.url}}" class="ripple primary{% if page.url == navpage.url %} active{%endif%}">{{navpage.title}}</a>
         {% endif %}
         {% endfor %}
     </div>

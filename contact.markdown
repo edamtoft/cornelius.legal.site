@@ -6,6 +6,7 @@ location_description_markdown: |
 location_button: Get Directions
 location_title: Location
 include_in_navigation: true
+language: en
 ---
 
 # Contact Us

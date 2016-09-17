@@ -1,12 +1,6 @@
 ---
-layout: root
+layout: page-root
 ---
-<main class="main">
-	{% if page.banner_image %}
-	<header class="hero" style="background-image:url('{{page.banner_image}}')">
-	</header>
-	{% endif %}
-	<article class="container page-content" style="padding-top: 1em; padding-bottom: 2em;">
-		{{ content }}
-	</article>
-</main>
+<section class="container page-content">
+	{{ content }}
+</section>

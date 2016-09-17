@@ -5,7 +5,8 @@ legal:
   - title: Disclaimer 2
     disclaimer_markdown: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mollis vitae diam et finibus. Donec maximus ac tortor in commodo. Maecenas ultricies enim dui, bibendum egestas neque pellentesque id.'
 abstract_text: "Bilingual General Practice Law Office in Takoma Park, Maryland."
-description_text: "Bilingual General Practice Law Office in Takoma Park, Maryland. Areas of practice include problems with a landlord, family law, immigration, denial of disability benefits, problems with debts, and other legal problems"
+description_text: "Bilingual General Practice Law Office in Takoma Park, Maryland. Areas of practice include immigration, familty law, problems with a landlord, and general legal needs"
+publisher: https://plus.google.com/103245336208599330228/about
 structured:
   "@context": "http://schema.org/"
   "@type": "Attorney"

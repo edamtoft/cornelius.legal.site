@@ -33,6 +33,10 @@ areas_of_practice:
     description_markdown: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra bibendum ultricies. Maecenas sed euismod turpis, id dignissim lorem.'
     link: '#'
 include_in_navigation: false
+language: en
+alternates:
+  - language: es
+    link: /espanol/
 ---
 
 # Law Office of Linda Cornelius

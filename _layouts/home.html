@@ -1,18 +1,18 @@
 ---
 layout: root
 ---
-<main class="main">
-	<section class="hero" style="background-image: url('{{page.banner_image}}')">
-		<div class="container row">
-			<div class="col-6 text-center translucent-block secondary">
-				<div class="content">
-					<h2 style="padding-bottom: 10px; border-bottom: 2px solid #690A15">{{page.hero_header}}</h2>
-					{{page.hero_content_markdown | markdownify }}
-					<a class="button light ripple" href="{{page.hero_link}}">{{page.hero_cta}}</a>
-				</div>
+<header class="hero" style="background-image: url('{{page.banner_image}}')">
+	<div class="container row">
+		<div class="col-6 text-center translucent-block secondary">
+			<div class="content">
+				<h2 class="border-bottom pad-bottom">{{page.hero_header}}</h2>
+				{{page.hero_content_markdown | markdownify }}
+				<a class="button light ripple" href="{{page.hero_link}}">{{page.hero_cta}}</a>
 			</div>
 		</div>
-	</section>
+	</div>
+</header>
+<main class="main">
 	<section class="off-white border-bottom">
 		<div class="container">
 			<div class="row">

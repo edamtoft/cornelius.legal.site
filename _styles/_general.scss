@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   padding-top: 60px;
+  -webkit-tap-highlight-color: transparent!important;
 }
 
 main {
@@ -82,8 +83,23 @@ ul.list-unstyled {
   li { list-style: none; }
 }
 
+.icon-large {
+  font-size: 150px;
+}
+
+.float-on-hover {
+  transition: transform 250ms, text-shadow 250ms;
+  text-shadow: 0 0 0 transparent;
+
+  &:hover {
+    transform: translateY(-10px);
+    text-shadow: 0 10px 10px $shadow;
+  }
+}
+
 .primary {
     color: darken($primary, 10%);
+    transform: color 250ms;
     &.hoverable:hover {
         color: $primary;
     }

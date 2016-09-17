@@ -19,7 +19,7 @@ layout: root
 				{% for area in page.areas_of_practice %}
 					<div class="col-4 text-center">
 						<a class="primary hoverable" href="{{area.link}}">
-							<h1><i class="fa fa-4x fa-{{area.icon}}"></i></h1>
+							<div class="icon-large float-on-hover"><i class="fa fa-{{area.icon}}"></i></div>
 							<h3>{{area.title}}</h3>
 						</a>
 						<p>{{area.description_markdown | markdownify}}</p>

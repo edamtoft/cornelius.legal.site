@@ -16,5 +16,6 @@
         }
     };
     navToggle.addEventListener("click", toggle);
-    fade.addEventListener("click", toggle);    
+    fade.addEventListener("click", toggle);
+    fade.addEventListener("touchstart", toggle);
 })();

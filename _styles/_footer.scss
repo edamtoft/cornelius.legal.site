@@ -9,6 +9,7 @@
 
    .inverse {
         color: $background;
+        transition: color 250ms;
         &.hoverable.active {
             color: $primary;
         }

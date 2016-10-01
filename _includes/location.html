@@ -14,7 +14,7 @@
     </div>
     <div class="col-6">
       <a target="_blank" href="https://www.google.com/maps/place/{{address.streetAddress|uri_escape}}+{{address.addressLocality|uri_escape}}+{{address.addressRegion|uri_escape}}">
-        <img class="img-responsive"	src="https://maps.googleapis.com/maps/api/staticmap?markers={{geo.latitude}},{{geo.longitude}}&zoom=13&size=480x320&scale=1.5&maptype=roadmap&key=AIzaSyCm_Kyfezuk3iz7-ya1pbwq-ELj17ZULPQ">
+        <img class="img-responsive"	src="https://maps.googleapis.com/maps/api/staticmap?markers={{geo.latitude}},{{geo.longitude}}&zoom=13&size=480x320&scale=1.5&maptype=roadmap&key=AIzaSyCm_Kyfezuk3iz7-ya1pbwq-ELj17ZULPQ" alt="Map of {{address.streetAddress}} {{address.addressLocality}} {{address.addressRegion}}">
       </a>
     </div>
   </div>

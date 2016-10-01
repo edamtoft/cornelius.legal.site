@@ -1,5 +1,5 @@
 ---
-title: Práctica general
+title: Práctica General
 layout: page
 description_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra bibendum ultricies. Maecenas sed euismod turpis, id dignissim lorem.
 language: spanish

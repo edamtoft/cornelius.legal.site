@@ -1,0 +1,14 @@
+.breadcrumbs {
+  display: block;
+  >a {
+    display: inline-block;
+    line-height: 24px;
+    padding: 12px 12px 12px 0;
+    &:not(:first-child):before {
+      display: inline-block;
+      line-height: 24px;
+      padding: 12px 12px 12px 0;
+      content: '/';
+    }
+  }
+}

@@ -1,7 +1,7 @@
 ---
 title: Home
 layout: home
-hero_header: "When Removal Threatens Your Family, Don't Go To Court Alone."
+hero_header: When Removal Threatens Your Family, Don't Go To Court Alone.
 hero_content_markdown: |-
   Contact the Law Office of Linda Cornelius to schedule an appointment.
 
@@ -14,12 +14,12 @@ hero_content_markdown: |-
   Initial consultation $50
 hero_cta: En Español
 hero_link: "/espanol/"
-banner_image: /assets/courtroom.jpg
+banner_image: "/assets/courtroom.jpg"
 include_in_navigation: false
 language: english
 alternates:
-  - language: es
-    link: /espanol/
+- language: es
+  link: "/espanol/"
 ---
 
 # Law Office of Linda Cornelius

@@ -1,8 +1,8 @@
 ---
 title: Home
+permalink: "/404.html"
 layout: page
 include_in_navigation: false
-permalink: /404.html
 noindex: true
 sitemap: false
 language: english

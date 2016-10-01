@@ -1,10 +1,11 @@
 ---
 title: Contact Us
 layout: contact
-location_description_markdown: 'Enter at the back of the building, under the Lobby Entrance sign.'
+location_description_markdown: Enter at the back of the building, under the Lobby
+  Entrance sign.
 location_button: Get Directions
 location_title: Location
-banner_image: /assets/phone.jpg
+banner_image: "/assets/phone.jpg"
 include_in_navigation: true
 language: english
 ---

@@ -1,16 +1,23 @@
 ---
 title: Law Office of Linda Cornelius
-# Configuration
-permalink: "/:slug/"
+timezone: UTC
 collections:
-  practice:
+  posts:
+    title: Posts
     output: true
+  practice:
+    title: Practice
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+permalink: "/:slug/"
 exclude:
-  - gulpfile.js
-  - package.json
-  - Gemfile
-  - _styles
-  - node_modules
+- gulpfile.js
+- package.json
+- Gemfile
+- _styles
+- node_modules
 env: production
 gems:
-  - jekyll-sitemap
+- jekyll-sitemap

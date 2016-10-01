@@ -9,8 +9,8 @@ layout: root
 {% endif %}
 <main class="main">
   <nav class="breadcrumbs container">
-    <a href="/">{{res.title}}</a>
-    <a href="{{page.url}}">{{page.title}}</a>
+    <a href="/" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="url"><span itemprop="title">{{res.title}}</span></a>
+    <a href="{{page.url}}" itemscope itemtype="http://data-vocabulary.org/Breadcrumb" itemprop="url"><span itemprop="title">{{page.title}}</span></a>
   </nav>
 	{{ content }}
 </main>

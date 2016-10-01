@@ -6,9 +6,7 @@ location_button: Get Directions
 location_title: Location
 banner_image: /assets/books.jpg
 include_in_navigation: true
-language: en
+language: english
 ---
-
-# Contact Us
 
 To schedule an initial consultation, call our office at 301.439.0011.

@@ -1,15 +1,16 @@
 {% assign address = site.data.seo.structured.address %}
 {% assign geo = site.data.seo.structured.geo %}
+{% assign res = site.data.translations[page.language] %}
 <section class="container" style="padding-top: 1em; padding-bottom: 2em;">
   <div class="row">
     <div class="col-6 text-center">
-      <h2 class="primary">{{page.location_title}}</h2>
+      <h2 class="primary">{{res.location | xml_escape}}</h2>
       <h3>
         {{address.streetAddress}}<br/>
         {{address.addressLocality}}, {{address.addressRegion}} {{address.postalCode}}
       </h3>
-      <p>{{page.location_description_markdown | markdownify}}</p>
-      <a class="button primary ripple" target="_blank" href="https://www.google.com/maps/place/{{address.streetAddress|uri_escape}}+{{address.addressLocality|uri_escape}}+{{address.addressRegion|uri_escape}}"><i class="fa fa-map-marker"></i> {{page.location_button}}</a>
+      <p>{{res.enterAt | xml_escape}}</p>
+      <a class="button primary ripple" target="_blank" href="https://www.google.com/maps/place/{{address.streetAddress|uri_escape}}+{{address.addressLocality|uri_escape}}+{{address.addressRegion|uri_escape}}"><i class="fa fa-map-marker"></i> {{res.getDirections | xml_escape}}</a>
     </div>
     <div class="col-6">
       <a target="_blank" href="https://www.google.com/maps/place/{{address.streetAddress|uri_escape}}+{{address.addressLocality|uri_escape}}+{{address.addressRegion|uri_escape}}">

@@ -1,18 +1,23 @@
 {% assign seo = site.data.seo %}
 {% assign address = site.data.seo.structured.address %}
+{% assign res = site.data.translations[page.language] %}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="geo.position" content="{{seo.structured.geo.latitude}},{{seo.structured.geo.longitude}}">
 <meta name="geo.region" content="{{address.addressRegion}}">
 <meta name="geo.placename" content="{{address.addressLocality}}">
-<meta name="description" content="{{seo.description_text}}">
-<meta name="abstract" content="{{seo.abstract_text}}">
+{% if page.description_text %}
+<meta name="description" content="{{page.description_text}}">
+{% else %}
+<meta name="description" content="{{res.description_text}}">
+{% endif %}
+<meta name="abstract" content="{{res.abstract_text}}">
 <meta name="theme-color" content="#7d070f">
 <meta name="robots" content="{% if page.noindex %}noindex;nofollow;{%else%}index;follow;{%endif%}">
 <script type="application/ld+json">
 {{ seo.structured | jsonify  }}
 </script>
-<title>{{ page.title }} - {{ site.title }} {{address.addressLocality}}, {{address.addressRegion}}</title>
+<title>{{ page.title }} - {{ res.title }} - {{address.addressLocality}}, {{address.addressRegion}}</title>
 <link rel="shortcut icon" href="/favicon.ico">
 <link rel="publisher" href="{{seo.publisher}}">
 {% for alternate in page.alternates %}

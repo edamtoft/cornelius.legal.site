@@ -3,7 +3,6 @@ body {
   background-color: $background;
   color: $dark;
   font-size: 12pt;
-  line-height: 1.5em;
   margin: 0;
   padding: 0;
   padding-top: 60px;
@@ -66,6 +65,8 @@ h1 {
 }
 
 .off-white {
+  z-index: 20;
+  transform: translateY(0); // Force to render in same context as hero banner
   background-color: darken($background, 10%);
 }
 
@@ -119,4 +120,19 @@ ul.list-unstyled {
     flex-grow: 1;
     text-align: center;
   }
+}
+
+  @keyframes float-up {
+    0% {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.float-in {
+  animation: float-up 1s ease-out;
 }

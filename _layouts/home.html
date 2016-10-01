@@ -1,9 +1,9 @@
 ---
 layout: root
 ---
-<header class="hero" style="background-image: url('{{page.banner_image}}')">
+<header class="hero" style="background: url('{{page.banner_image}}'), #843c2c">
 	<div class="container row">
-		<div class="col-6 text-center translucent-block secondary">
+		<div class="col-6 text-center translucent-block secondary float-in">
 			<div class="content">
 				<h2 class="border-bottom pad-bottom">{{page.hero_header}}</h2>
 				{{page.hero_content_markdown | markdownify }}
@@ -16,13 +16,14 @@ layout: root
 	<section class="off-white border-bottom">
 		<div class="container">
 			<div class="row">
-				{% for area in page.areas_of_practice %}
+				{% assign areasOfPractice = site.practice | where:"language",page.language %}
+				{% for area in areasOfPractice %}
 					<div class="col-4 text-center">
-						<a class="primary hoverable" href="{{area.link}}">
+						<a class="primary hoverable" href="{{area.url}}">
 							<div class="icon-large float-on-hover"><i class="fa fa-{{area.icon}}"></i></div>
 							<h3>{{area.title}}</h3>
 						</a>
-						<p>{{area.description_markdown | markdownify}}</p>
+						<p>{{area.description_text}}</p>
 					</div>
 				{% endfor %}
 			</div>

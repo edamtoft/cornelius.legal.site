@@ -1,5 +1,6 @@
 {% assign address = site.data.seo.structured.address %}
 {% assign geo = site.data.seo.structured.geo %}
+{% assign res = site.data.translations[page.language] %}
 <footer class="footer dark border-top">
   <div class="container">
     <div class="row">
@@ -7,22 +8,30 @@
         <h4><a class="inverse hoverable" href="/">{{site.title}}</a></h4>
         <ul class="list-unstyled">
           {% for navpage in site.pages %}
-          {% if navpage.include_in_navigation %}
+          {% if navpage.sitemap != false %}
                 <li><a class="inverse hoverable ripple dark" href="{{navpage.url}}">{{navpage.title}}</a></li>
           {% endif %}
           {% endfor %}
-          <li>
-            <a target="_blank" class="inverse hoverable ripple dark" href="tel:{{seo.structured.telephone}}"><i class="fa fa-phone"></i>: {{seo.structured.telephone}}</a></li>
-          <li>
-            <a target="_blank" class="inverse hoverable ripple dark" href="https://www.google.com/maps/place/{{address.streetAddress|uri_escape}}+{{address.addressLocality|uri_escape}}+{{address.addressRegion|uri_escape}}"><i class="fa fa-map-marker"></i>: {{address.streetAddress}}
-            <br/>{{address.addressLocality}}, {{address.addressRegion}} {{address.postalCode}}</a></li>
+          {% for collection in site.collections %}
+          {% for navpage in collection.docs %}
+          {% if navpage.sitemap != false and navpage.language == page.language %}
+                <li><a class="inverse hoverable ripple dark" href="{{navpage.url}}">{{navpage.title}}</a></li>
+          {% endif %}
+          {% endfor %}
+          {% endfor %}
         </ul>
       </div>
       <div class="col-4">
-        {% for disclaimer in site.data.seo.legal %}
-          <h4>{{disclaimer.title}}</h4>
-          <div class="inverse disclaimer">{{disclaimer.disclaimer_markdown | markdownify}}</div>
-        {% endfor %}
+          <h4>{{res.disclaimer}}</h4>
+          <div class="inverse disclaimer">{{res.disclaimer_text | markdownify}}</div>
+          <h4>{{res.contactUs}}</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a target="_blank" class="inverse hoverable ripple dark" href="tel:{{seo.structured.telephone}}"><i class="fa fa-phone"></i>: {{seo.structured.telephone}}</a></li>
+            <li>
+              <a target="_blank" class="inverse hoverable ripple dark" href="https://www.google.com/maps/place/{{address.streetAddress|uri_escape}}+{{address.addressLocality|uri_escape}}+{{address.addressRegion|uri_escape}}"><i class="fa fa-map-marker"></i>: {{address.streetAddress}}
+              <br/>{{address.addressLocality}}, {{address.addressRegion}} {{address.postalCode}}</a></li>
+          </ul>
       </div>
       <div class="col-4 text-center">
         <img class="img-responsive" src="/assets/aila.jpg" alt="American Immigration Lawyers Association Member">

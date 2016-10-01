@@ -27,9 +27,16 @@
     </div>
     <div class="links">
         {% for navpage in site.pages %}
-        {% if navpage.include_in_navigation %}
+        {% if navpage.sitemap != false %}
             <a href="{{navpage.url}}" class="ripple primary{% if page.url == navpage.url %} active{%endif%}">{{navpage.title}}</a>
         {% endif %}
+        {% endfor %}
+        {% for collection in site.collections %}
+        {% for navpage in collection.docs %}
+        {% if navpage.sitemap != false and navpage.language == page.language %}
+            <a href="{{navpage.url}}" class="ripple primary{% if page.url == navpage.url %} active{%endif%}">{{navpage.title}}</a>
+        {% endif %}
+        {% endfor %}
         {% endfor %}
     </div>
 </nav>

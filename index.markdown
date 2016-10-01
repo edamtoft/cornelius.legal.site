@@ -15,25 +15,8 @@ hero_content_markdown: |-
 hero_cta: En Español
 hero_link: "/espanol/"
 banner_image: /assets/courtroom.jpg
-location_description_markdown: |
-  Enter at the back of the building, under the Lobby Entrance sign.
-location_button: Get Directions
-location_title: Location
-areas_of_practice:
-  - title: Immigration Law
-    icon: bank
-    description_markdown: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra bibendum ultricies. Maecenas sed euismod turpis, id dignissim lorem.'
-    link: '#'
-  - title: Employment Stuff
-    icon: balance-scale
-    description_markdown: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra bibendum ultricies. Maecenas sed euismod turpis, id dignissim lorem.'
-    link: '#'
-  - title: Other Stuff
-    icon: gavel
-    description_markdown: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra bibendum ultricies. Maecenas sed euismod turpis, id dignissim lorem.'
-    link: '#'
 include_in_navigation: false
-language: en
+language: english
 alternates:
   - language: es
     link: /espanol/

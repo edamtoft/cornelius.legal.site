@@ -2,6 +2,9 @@
 title: Law Office of Linda Cornelius
 # Configuration
 permalink: "/:slug/"
+collections:
+  practice:
+    output: true
 exclude:
   - gulpfile.js
   - package.json

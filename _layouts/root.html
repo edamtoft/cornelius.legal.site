@@ -1,7 +1,8 @@
 ---
 ---
+{% assign res = site.data.translations[page.language] %}
 <!DOCTYPE html>
-<html lang="{{page.language}}">
+<html lang="{{res.code}}">
 <head>
 {% include head.html %}
 </head>

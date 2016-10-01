@@ -5,6 +5,7 @@ include_in_navigation: false
 permalink: /404.html
 noindex: true
 sitemap: false
+language: english
 ---
 
 # Page Not Found

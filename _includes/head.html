@@ -23,5 +23,10 @@
 {% for alternate in page.alternates %}
 <link rel="alternate" href="{{alternate.link}}" hreflang="{{alternate.language}}">
 {% endfor %}
+{% for navpage in site.pages %}
+{% if navpage.include_in_navigation %}
+<link rel="prefetch" href="{{navpage.url}}">
+{% endif %}
+{% endfor %}
 <style>{% include css/site.css %}</style>
 

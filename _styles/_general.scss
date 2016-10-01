@@ -43,7 +43,8 @@ h1 {
 
 .page-content {
   line-height: 2em;
-
+  padding-top: 1em;
+  padding-bottom: 2em;
   h1, h2 {
     color: darken($primary, 10%);
     font-variant: small-caps;

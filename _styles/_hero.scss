@@ -4,9 +4,9 @@
   align-items: center;
   flex-direction: row;
   background-color: $page-image-color;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 60px;
+  background-position: top center;
   padding: 10px 0;
   @media only screen and (min-width: $breakpoint-small) {
     min-height: 500px;

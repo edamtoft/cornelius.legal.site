@@ -1,0 +1,1 @@
+"use strict";!function(){window.onbeforeunload=function(){document.body.classList.add("unload")}}();

@@ -1,3 +1,25 @@
+@keyframes load {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.8; 
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1; 
+  }
+}
+
+@keyframes float-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 body {
   font-family: $body-font;
   background-color: $background;
@@ -7,6 +29,14 @@ body {
   padding: 0;
   padding-top: 60px;
   -webkit-tap-highlight-color: transparent!important;
+  @media only screen and (max-width: $breakpoint-small) {
+    transition: opacity 0.5s, transform 0.5s;
+    &.unload {
+      transform: scale(0.9);
+      opacity: 0.8; 
+    }
+    animation: load 0.5s;
+  }
 }
 
 main {
@@ -121,17 +151,6 @@ ul.list-unstyled {
     text-align: center;
   }
 }
-
-  @keyframes float-up {
-    0% {
-      opacity: 0;
-      transform: translateY(100px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 
 .float-in {
   animation: float-up 1s ease-out;

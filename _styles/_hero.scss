@@ -1,13 +1,19 @@
 .hero {
-  min-height: 500px;
+  min-height: 250px;
   display: flex;
   align-items: center;
   flex-direction: row;
+  background-color: $page-image-color;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
   padding: 10px 0;
-
+  @media only screen and (min-width: $breakpoint-small) {
+    min-height: 500px;
+  }
+  &.home {
+    background-color: $homepage-image-color;
+  }
   &.text {
     >h1 {
       width: 100%;
@@ -15,6 +21,7 @@
       font-variant: small-caps;
       font-size: 40pt;
       text-shadow: 0 5px 5px $shadow;
+      padding: 10px;
       @media only screen and (min-width: $breakpoint-med) {
         font-size: 60pt;
       }

@@ -1,25 +1,24 @@
----
 legal:
-  - title: Disclaimer
-    disclaimer_markdown: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mollis vitae diam et finibus. Donec maximus ac tortor in commodo. Maecenas ultricies enim dui, bibendum egestas neque pellentesque id.'
+  - title: Under Construction
+    disclaimer_markdown: 'This site is under construction and is intended only as a design draft. To view the current website for the Law Office of Linda Cornelius, go to [www.cornelius.legal](http://www.cornelius.legal).'
   - title: Disclaimer 2
     disclaimer_markdown: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mollis vitae diam et finibus. Donec maximus ac tortor in commodo. Maecenas ultricies enim dui, bibendum egestas neque pellentesque id.'
-abstract_text: "Bilingual General Practice Law Office in Takoma Park, Maryland."
-description_text: "Bilingual General Practice Law Office in Takoma Park, Maryland. Areas of practice include immigration, familty law, problems with a landlord, and general legal needs"
-publisher: https://plus.google.com/103245336208599330228/about
+abstract_text: 'Bilingual General Practice Law Office in Takoma Park, Maryland.'
+description_text: 'Bilingual General Practice Law Office in Takoma Park, Maryland. Areas of practice include immigration, familty law, problems with a landlord, and general legal needs'
+publisher: 'https://plus.google.com/103245336208599330228/about'
 structured:
-  "@context": "http://schema.org/"
-  "@type": "Attorney"
-  openingHours: "Mo,Tu,We,Th,Fr 09:00-17:00PM"
-  address: 
-    streetAddress: "7505 New Hampshire Ave #308"
-    addressLocality: "Takoma Park"
-    addressRegion: "MD"
-    addressPostalCode: "20912"
-  telephone: "301-439-0011"
-  url: http://www.cornelius.legal
+  '@context': 'http://schema.org/'
+  '@type': Attorney
+  openingHours: 'Mo,Tu,We,Th,Fr 09:00-17:00PM'
+  address:
+    streetAddress: '7505 New Hampshire Ave #308'
+    addressLocality: Takoma Park
+    addressRegion: MD
+    addressPostalCode: '20912'
+  telephone: 301-439-0011
+  url: 'http://www.cornelius.legal'
   name: Law Office of Linda cornelius
   logo: /assets/logo.png
   geo:
-    latitude: "38.9848734"
-    longitude: "-76.9890218"
+    latitude: '38.9848734'
+    longitude: '-76.9890218'

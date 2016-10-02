@@ -1,5 +1,6 @@
 ---
 title: Práctica General
+identifier: generalpractice
 layout: page
 description_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra bibendum ultricies. Maecenas sed euismod turpis, id dignissim lorem.
 language: spanish

@@ -1,0 +1,5 @@
+{% for navpage in site.pages %}{% if navpage.include_in_navigation %}
+<link rel="prefetch" href="{{navpage.url}}">
+{% endif %}{% if navpage.banner_image %}
+<link rel="prefetch" href="{{navpage.banner_image}}">
+{% endif %}{% endfor %}

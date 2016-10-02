@@ -1,0 +1,6 @@
+{% for doc in site.documents %}{% if doc.identifier == page.identifier %}{% unless doc.language == page.language%}
+<link rel="alternate" href="{{doc.url}}" hreflang="{{site.data.translations[doc.language].code}}">
+{% endunless%}{% endif %}{% endfor %}
+{% for doc in site.pages %}{% if doc.identifier == page.identifier %}{% unless doc.language == page.language%}
+<link rel="alternate" href="{{doc.url}}" hreflang="{{site.data.translations[doc.language].code}}">
+{% endunless%}{% endif %}{% endfor %}

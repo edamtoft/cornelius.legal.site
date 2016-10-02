@@ -1,5 +1,6 @@
 ---
 title: Español
+identifier: home
 layout: home
 hero_header: "When Removal Threatens Your Family, Don't Go To Court Alone."
 hero_content_markdown: |-
@@ -13,9 +14,6 @@ hero_link: /
 banner_image: /assets/courtroom.jpg
 include_in_navigation: true
 language: spanish
-alternates:
-  - language: en
-    link: /
 ---
 
 

@@ -20,16 +20,7 @@
 <title>{{ page.title }} - {{ res.title }} - {{address.addressLocality}}, {{address.addressRegion}}</title>
 <link rel="shortcut icon" href="/favicon.ico">
 <link rel="publisher" href="{{seo.publisher}}">
-{% for alternate in page.alternates %}
-<link rel="alternate" href="{{alternate.link}}" hreflang="{{alternate.language}}">
-{% endfor %}
-{% for navpage in site.pages %}
-{% if navpage.include_in_navigation %}
-<link rel="prefetch" href="{{navpage.url}}">
-{% endif %}
-{% if navpage.banner_image %}
-<link rel="prefetch" href="{{navpage.banner_image}}">
-{% endif %}
-{% endfor %}
+{% include alternates.html %}
+{% include prefetch.html %}
 <style>{% include css/site.css %}</style>
 

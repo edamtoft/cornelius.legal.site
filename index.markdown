@@ -2,7 +2,8 @@
 title: Home
 identifier: home
 layout: home
-hero_header: Do you need legal help or legal advice in Spanish or English? My office has bilingual capacity in Spanish and English.
+hero_header: Do you need legal help or legal advice in Spanish or English? My office
+  has bilingual capacity in Spanish and English.
 hero_content_markdown: |-
   I will help you figure out the best options for your situation. My consultations are by appointment.
 

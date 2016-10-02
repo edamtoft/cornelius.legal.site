@@ -28,9 +28,8 @@
         {% for navpage in site.pages %}{% if navpage.sitemap != false and  navpage.language == page.language %}
             <a href="{{navpage.url}}" class="ripple primary{% if page.url == navpage.url %} active{%endif%}">{{navpage.title}}</a>
         {% endif %}{% endfor %}
-        {% assign publishedCollections = site.collections | where:'output',true %}
-        {% for collection in publishedCollections %}{% for navpage in collection.docs %}{% if navpage.sitemap != false and navpage.language == page.language %}
+        {% for navpage in site.documents %}{% if navpage.sitemap != false and  navpage.language == page.language %}
             <a href="{{navpage.url}}" class="ripple primary{% if page.url == navpage.url %} active{%endif%}">{{navpage.title}}</a>
-        {% endif %}{% endfor %}{% endfor %}
+        {% endif %}{% endfor %}
     </div>
 </nav>

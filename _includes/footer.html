@@ -7,8 +7,12 @@
       <div class="col-4">
         <h4><a class="inverse hoverable" href="/">{{res.title}}</a></h4>
         <ul class="list-unstyled sitemap">
-          {% assign navgroups = site.pages | where:"sitemap":true | sort:"language" | group_by:"identifier" %}
-          {% for navgroup in navgroups %}<li>{% for navpage in navgroup.items %}
+          {% assign sitepages = site.pages | where:"sitemap":true | sort:"language" | group_by:"identifier" %}
+          {% for navgroup in sitepages %}<li>{% for navpage in navgroup.items %}
+                <a class="inverse hoverable ripple dark" href="{{navpage.url}}">{{navpage.title}}</a>
+          {% endfor %}</li>{% endfor %}
+          {% assign sitedocs = site.documents | where:"sitemap":true | sort:"language" | group_by:"identifier" %}
+          {% for navgroup in sitedocs %}<li>{% for navpage in navgroup.items %}
                 <a class="inverse hoverable ripple dark" href="{{navpage.url}}">{{navpage.title}}</a>
           {% endfor %}</li>{% endfor %}
         </ul>

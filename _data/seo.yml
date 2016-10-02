@@ -4,14 +4,16 @@ structured:
   '@type': Attorney
   openingHours: 'Mo,Tu,We,Th,Fr 09:00-17:00PM'
   address:
+    '@type': PostalAddress
     streetAddress: '7505 New Hampshire Ave #308'
     addressLocality: Takoma Park
     addressRegion: MD
-    addressPostalCode: '20912'
+    postalCode: '20912'
   telephone: 301-439-0011
   url: 'http://www.cornelius.legal'
   name: Law Office of Linda cornelius
-  logo: /assets/logo.png
+  logo: http://www.cornelius.legal/assets/logo.png
   geo:
+    '@type': GeoCoordinates
     latitude: '38.9848734'
     longitude: '-76.9890218'

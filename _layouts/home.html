@@ -14,11 +14,11 @@ layout: root
 	</div>
 </header>
 <main class="main">
+	{% if false %}
 	<section class="off-white border-bottom">
 		<div class="container">
 			<div class="row">
-				{% assign areasOfPractice = site.practice | where:"language",page.language %}
-				{% for area in areasOfPractice %}
+				{% for area in site.practice %}{% if area.language == page.language %}
 					<div class="col-4 text-center">
 						<a class="primary hoverable" href="{{area.url}}">
 							<div class="icon-large float-on-hover"><i class="fa fa-{{area.icon}}"></i></div>
@@ -26,10 +26,11 @@ layout: root
 						</a>
 						<p>{{area.description_text}}</p>
 					</div>
-				{% endfor %}
+				{% endif %}{% endfor %}
 			</div>
 		</div>
 	</section>
+	{% endif %}
 	<section class="container page-content" style="padding-top: 1em; padding-bottom: 2em;">
 				{{ content }}
 	</section>

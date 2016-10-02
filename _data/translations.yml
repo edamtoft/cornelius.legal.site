@@ -10,17 +10,21 @@ english:
   abstract_text: 'Bilingual General Practice Law Office in Takoma Park, Maryland.'
   description_text: 'Bilingual General Practice Law Office in Takoma Park, Maryland. Areas of practice include immigration, familty law, problems with a landlord, and general legal needs'
   contactUs: Contact Us
+  contactUs_link: /contact/
   home: Home
+  home_link: /
 spanish:
   code: es
   title: Oficina Legal de Linda Cornelius
   getDirections: Obtener las Direcciones
   location: Localización
   enterAt: "Por favor Ingrese por la parte en la posterior del edificio “Lobby Entrance”"
-  disclaimer: Renuncia
+  disclaimer: Aviso Legal 
   disclaimer_text: |
     This site is under construction and is intended only as a design draft. To view the current website for the Law Office of Linda Cornelius, go to www.cornelius.legal.
   abstract_text: 'Oficina de la Ley General de Práctica bilingüe en Takoma Park, Maryland.'
   description_text: 'Oficina de la Ley General de Práctica bilingüe en Takoma Park, Maryland. Áreas de práctica incluyen inmigración, derecho familty, problemas con el arrendador, y las necesidades legales generales'
   contactUs: Contáctenos
+  contactUs_link: /contactenos/
   home: Inicio
+  home_link: /espanol/

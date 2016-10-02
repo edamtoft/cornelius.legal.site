@@ -1,5 +1,5 @@
 ---
-title: Home
+title: Page not Found
 permalink: "/404.html"
 layout: page
 identifier: 404

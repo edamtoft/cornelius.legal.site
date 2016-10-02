@@ -1,9 +1,9 @@
 ---
-title: Contact Us
+title: Contáctenos
 identifier: contact
 layout: contact
 banner_image: "/assets/phone.jpg"
-language: english
+language: spanish
 sitemap: true
 ---
 

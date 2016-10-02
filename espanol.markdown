@@ -1,22 +1,21 @@
 ---
-title: Español
+title: Inicio
 identifier: home
 layout: home
-hero_header: When Removal Threatens Your Family, Don't Go To Court Alone.
+hero_header: "¿Necesita usted representación legal o asesoramiento legal? Mi oficina puede proveerle servicios en inglés y español y ayudarle a encontrar las mejores opciones disponibles para su situación."
 hero_content_markdown: |-
-  Contact the Law Office of Linda Cornelius to schedule an appointment.
+  Se Agradece Llamar Antes Para Convenir Una Cita.
+  $50 por la primera consulta
 
-  Initial Consultation is $50.
-
-  ## Call Today: 301.439.0011
+  ## 301-439-0011
 hero_cta: English
 hero_link: "/"
 banner_image: "/assets/courtroom.jpg"
-include_in_navigation: true
 language: spanish
+sitemap: true
 ---
 
-# Law Office of Linda Cornelius
+# Oficina Legal de Linda Cornelius
 
 ![Linda Cornelius](/assets/lindacornelius.jpg)
 
@@ -25,3 +24,5 @@ Por más de nueve años, he practicado leyes con organizaciones sin fines de luc
 Educación: Grinnell College, Universidad de Michigan Escuela de Derecho Licenciada para practicar Leyes en Maryland y Michigan.
 
 Miembro de la Asociación de Abogados de Maryland “Maryland State Bar Association”, El Colegio de Abogados del Condado de Montgomery, Maryland “The Bar Association of Montgomery County, Maryland”, El Colegio de Abogados del Estado de Michigan “State Bar of Michigan”, y El Colegio de Abogados de Inmigración Americano “American Immigration Lawyers Association”.
+
+![American Immigration Lawyers Association](/assets/aila.jpg)

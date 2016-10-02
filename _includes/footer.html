@@ -5,25 +5,21 @@
   <div class="container">
     <div class="row">
       <div class="col-4">
-        <h4><a class="inverse hoverable" href="/">{{site.title}}</a></h4>
-        <ul class="list-unstyled">
-          {% for navpage in site.pages %}
-          {% if navpage.sitemap != false %}
-                <li><a class="inverse hoverable ripple dark" href="{{navpage.url}}">{{navpage.title}}</a></li>
-          {% endif %}
-          {% endfor %}
-          {% for collection in site.collections %}
-          {% for navpage in collection.docs %}
-          {% if navpage.sitemap != false and navpage.language == page.language %}
-                <li><a class="inverse hoverable ripple dark" href="{{navpage.url}}">{{navpage.title}}</a></li>
-          {% endif %}
-          {% endfor %}
-          {% endfor %}
+        <h4><a class="inverse hoverable" href="/">{{res.title}}</a></h4>
+        <ul class="list-unstyled sitemap">
+          {% assign navgroups = site.pages | where:"sitemap":true | sort:"language" | group_by:"identifier" %}
+          {% for navgroup in navgroups %}<li>{% for navpage in navgroup.items %}
+                <a class="inverse hoverable ripple dark" href="{{navpage.url}}">{{navpage.title}}</a>
+          {% endfor %}</li>{% endfor %}
         </ul>
       </div>
       <div class="col-4">
           <h4>{{res.disclaimer}}</h4>
-          <div class="inverse disclaimer">{{res.disclaimer_text | markdownify}}</div>
+          <div class="inverse disclaimer">
+            {{res.disclaimer_text | markdownify}}
+            <p>Content &copy; {{ site.time | date: '%Y' }} Law Office of Linda Cornelius</p>
+            <p>Layout and Design &copy; {{ site.time | date: '%Y' }} Eric Damtoft</p>
+          </div>
           <h4>{{res.contactUs}}</h4>
           <ul class="list-unstyled">
             <li>

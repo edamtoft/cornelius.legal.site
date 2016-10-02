@@ -1,26 +1,34 @@
 .footer {
-    min-height: 250px;
-   
-   li a {
-       display: block;
-       padding-top: 5px;
-       padding-bottom: 5px;
-   }
+  min-height: 250px;
 
-   .inverse {
-        color: $background;
-        transition: color 250ms;
-        &.hoverable.active {
-            color: $primary;
-        }
-        &.hoverable:hover {
-            color: $primary;
-        }
+  ul.sitemap {
+    >li
+    {
+      display: flex;
+      flex-direction: row;
+      >a {
+        display: block;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 50%;
+      }
     }
+  }
 
-    .disclaimer {
-        font-size: 9pt;
-        line-height: 1.2em;
+  .inverse {
+    color: $background;
+    transition: color 250ms;
+    &.hoverable.active {
+      color: $primary;
     }
+    &.hoverable:hover {
+      color: $primary;
+    }
+  }
+
+  .disclaimer {
+    font-size: 9pt;
+    line-height: 1.2em;
+  }
 }
 

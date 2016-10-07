@@ -19,5 +19,3 @@ exclude:
 - _styles
 - node_modules
 env: production
-gems:
-- jekyll-sitemap

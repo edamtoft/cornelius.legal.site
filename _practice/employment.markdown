@@ -2,10 +2,12 @@
 title: General Civil Law
 identifier: CivilLaw
 layout: contact
-description_text: 'When you need the advice of a lawyer- about unpaid wages, about your landlord, about a contract, about a lawsuit you want to bring- call and make an appointment.'
+description_text: When you need the advice of a lawyer- about unpaid wages, about
+  your landlord, about a contract, about a lawsuit you want to bring- call and make
+  an appointment.
 language: english
 icon: bank
-banner_image: /assets/columns.jpg
+banner_image: "/assets/columns.jpg"
 sitemap: true
 ---
 

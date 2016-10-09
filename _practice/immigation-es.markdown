@@ -6,7 +6,7 @@ description_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
   bibendum ultricies. Maecenas sed euismod turpis, id dignissim lorem.
 language: spanish
 icon: gavel
-banner_image: "/assets/immigration.jpg"
+banner_image: "/assets/baltimore.jpg"
 sitemap: true
 order: 1
 ---

@@ -7,7 +7,7 @@ description_text: Representation in the EOIR immigration court in Baltimore, and
   you to help find solutions.
 language: english
 icon: gavel
-banner_image: "/assets/immigration.jpg"
+banner_image: "/assets/baltimore.jpg"
 sitemap: true
 order: 1
 ---

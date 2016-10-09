@@ -17,7 +17,8 @@ layout: root
 	<section class="off-white border-bottom">
 		<div class="container">
 			<div class="row">
-				{% for area in site.practice %}{% if area.language == page.language %}
+				{% assign areas = site.practice | where:'language',page.language | sort:'order' %}
+				{% for area in areas%}
 					<div class="col-4 text-center">
 						<a class="primary hoverable" href="{{area.url}}">
 							<div class="icon-large float-on-hover"><i class="fa fa-{{area.icon}}"></i></div>
@@ -25,7 +26,7 @@ layout: root
 						</a>
 						<p>{{area.description_text}}</p>
 					</div>
-				{% endif %}{% endfor %}
+				{% endfor %}
 			</div>
 		</div>
 	</section>

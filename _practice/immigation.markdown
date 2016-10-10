@@ -2,12 +2,10 @@
 title: Immigration Law
 identifier: immigrationlaw
 layout: contact
-description_text: Representation in the EOIR immigration court in Baltimore, and in
-  matters with USCIS. The Law Office of Linda Cornelius is committed to working with
-  you to help find solutions. iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+description_text: 'Representation in the EOIR immigration court in Baltimore, and in matters with USCIS. The Law Office of Linda Cornelius is committed to working with you to help find solutions.'
 language: english
 icon: gavel
-banner_image: "/assets/baltimore.jpg"
+banner_image: /assets/baltimore.jpg
 sitemap: true
 order: 1
 ---

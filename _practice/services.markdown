@@ -8,7 +8,7 @@ description_text: Legal advice and representation in civil matters including wil
   community in Maryland.
 language: english
 icon: balance-scale
-banner_image: "/assets/rainbow-flag.jpg"
+banner_image: "/assets/books.jpg"
 sitemap: true
 order: 3
 ---

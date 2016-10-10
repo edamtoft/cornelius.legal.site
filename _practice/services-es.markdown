@@ -8,9 +8,9 @@ description_text: Legal advice and representation in civil matters including wil
   community in Maryland.
 language: spanish
 icon: balance-scale
-banner_image: "/assets/rainbow-flag.jpg"
+banner_image: "/assets/books.jpg"
 sitemap: true
 order: 3
 ---
 
-Legal advice and representation in civil law matters including wills and contracts, name and gender changes, and immigration cases, including asylum. The Law Office of Linda Cornelius offers to you and your loved ones representation and advice in civil law matters, in Spanish and English, based in experience and commitment.
+Legal advice and representation in civil law matters including wills and contracts, name and gender changes, and immigration cases, including asylum. The Law Office of Linda Cornelius offers to you and your loved ones representation and advice in civil law matters, in Spanish and English, based in experience and commitment serving the LGBTQ community.

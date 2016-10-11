@@ -2,7 +2,8 @@
 title: Ley Immigation
 identifier: immigrationlaw
 layout: contact
-description_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra
+description_text: |
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce viverra
   bibendum ultricies. Maecenas sed euismod turpis, id dignissim lorem.
 language: spanish
 icon: gavel

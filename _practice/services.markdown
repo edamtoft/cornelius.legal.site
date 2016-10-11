@@ -2,7 +2,8 @@
 title: Services for the Community
 identifier: community
 layout: contact
-description_text: The Law Office of Linda Cornelius is committed to serving the Spanish
+description_text: |
+  The Law Office of Linda Cornelius is committed to serving the Spanish
   speaking community in Maryland, regardless of income level, education, or sexual
   orientation or gender identity.
 language: english

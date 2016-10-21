@@ -2,16 +2,20 @@
 title: Services for the Entire Community
 identifier: community
 layout: contact
-description_text: |-
+description_text: >-
   The Law Office of Linda Cornelius is committed to serving the Spanish
-  speaking community in Maryland, regardless of income level, education, or sexual
+
+  speaking community in Maryland, regardless of income level, education, or
+  sexual
+
   orientation or gender identity.
 language: english
 icon: balance-scale
-banner_image: "/assets/books.jpg"
+banner_image: /assets/books.jpg
 sitemap: true
 order: 3
 ---
+
 
 &nbsp;
 
@@ -23,7 +27,7 @@ We offer our services in Spanish and English. &nbsp;We know that it is important
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \* &nbsp; &nbsp; \* &nbsp; &nbsp;\*
 
-We know that legal services are a major expense for many families. We accept payment over time, and we in most cases can tell you at the first appointment what your cost for representation will be.
+We know that legal services are a major expense for many families. We accept payment over time, and &nbsp;in most cases we can tell you at the first appointment what your cost for representation will be.
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \* &nbsp; &nbsp;\* &nbsp; &nbsp; \*
 

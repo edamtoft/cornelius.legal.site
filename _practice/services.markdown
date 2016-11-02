@@ -1,17 +1,15 @@
 ---
-title: Services for the Entire Community
+title: Services for the LGBTQ Community
 identifier: community
 layout: contact
-description_text: Legal advice and representation in civil matters including wills
-  and contracts, name and gender change cases, and immigration cases, including asylum.
-  The Law Office of Linda Cornelius is committed to serving the Spanish speaking LGBTQ
-  community in Maryland.
+description_text: 'Legal advice and representation in civil matters including wills and contracts, name and gender change cases, and immigration cases, including asylum. The Law Office of Linda Cornelius is committed to serving the Spanish speaking LGBTQ community in Maryland.'
 language: english
 icon: balance-scale
-banner_image: "/assets/books.jpg"
+banner_image: /assets/books.jpg
 sitemap: true
 order: 3
 ---
+
 
 \*     \*    \*
 

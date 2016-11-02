@@ -2,14 +2,15 @@
 title: INMIGRACION
 identifier: immigrationlaw
 layout: contact
-description_text: 'La abogada Linda Cornelius le representa a usted y a su familia en la corte de inmigración en Baltimore, también en cualquier caso relacionado con USCIS.'
+description_text: La abogada Linda Cornelius le representa a usted y a su familia
+  en la corte de inmigración en Baltimore, también en cualquier caso relacionado con
+  USCIS.
 language: spanish
 icon: gavel
-banner_image: /assets/baltimore.jpg
+banner_image: "/assets/baltimore.jpg"
 sitemap: true
 order: 1
 ---
-
 
 La abogada Linda Cornelius le representa a usted y a su familia en la corte de inmigraci&oacute;n en Baltimore, tambi&eacute;n en cualquier caso relacionado con USCIS.
 

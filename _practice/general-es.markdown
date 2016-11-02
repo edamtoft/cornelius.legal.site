@@ -7,11 +7,10 @@ description_text: |-
   bibendum ultricies. Maecenas sed euismod turpis, id dignissim lorem.
 language: spanish
 icon: bank
-banner_image: /assets/books.jpg
+banner_image: "/assets/books.jpg"
 sitemap: true
 order: 2
 ---
-
 
 La Oficina Legal de Linda Cornelius tambi&eacute;n puede ayudarlos con otros casos de car&aacute;cter civil.
 

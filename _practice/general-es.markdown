@@ -2,14 +2,14 @@
 title: SERVICIOS LEGALES EN GENERAL
 identifier: generalpractice
 layout: contact
-description_text: Cuando usted tenga un problema legal. Llámenos y haremos una cita de manera que reciba la debida asistencia legal.
+description_text: Cuando usted tenga un problema legal. Llámenos y haremos una cita
+  de manera que reciba la debida asistencia legal.
 language: spanish
 icon: bank
-banner_image: /assets/books.jpg
+banner_image: "/assets/books.jpg"
 sitemap: true
 order: 2
 ---
-
 
 La Oficina Legal de Linda Cornelius también puede ayudarlos con otros casos de carácter civil.
 

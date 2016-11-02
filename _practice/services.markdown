@@ -7,11 +7,10 @@ description_text: |-
   speaking community in Maryland.
 language: english
 icon: balance-scale
-banner_image: /assets/books.jpg
+banner_image: "/assets/books.jpg"
 sitemap: true
 order: 3
 ---
-
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 

@@ -2,14 +2,15 @@
 title: INMIGRACION
 identifier: immigrationlaw
 layout: contact
-description_text: 'Les represento en la corte de Inmigracion en Baltimore, en casos de deportación, asilo, dispensa juvenil para menores (SIJS), asesoramiento en peticiones familiares, DACA, TPS.'
+description_text: Les represento en la corte de Inmigracion en Baltimore, en casos
+  de deportación, asilo, dispensa juvenil para menores (SIJS), asesoramiento en peticiones
+  familiares, DACA, TPS.
 language: spanish
 icon: gavel
-banner_image: /assets/baltimore.jpg
+banner_image: "/assets/baltimore.jpg"
 sitemap: true
 order: 1
 ---
-
 
 La abogada Linda Cornelius le representa a usted y a su familia en la corte de inmigración en Baltimore, también en cualquier caso relacionado con USCIS.
 

@@ -2,31 +2,26 @@
 title: Home
 identifier: home
 layout: home
-hero_header: 'The Law Office of Linda Cornelius is in Takoma park, near Langley Park. I represent clients in immigration cases and in civil cases in Maryland state courts.'
-hero_content_markdown: >-
-  We will work with you to find the best solution for your situation. Our goal is
-  to provide affordable, effective legal representation. Consultations are by
-  appointment.&nbsp;
+hero_header: The Law Office of Linda Cornelius is in Takoma park, near Langley Park.
+  I represent clients in immigration cases and in civil cases in Maryland state courts.
+hero_content_markdown: |-
+  We will work with you to find the best solution for your situation. Our goal is to provide affordable, effective legal representation. Consultations are by appointment.&nbsp;
 
 
 
 
-
-  Call to schedule an appointment. The initial consultation is $50. My office has
-  bilingual capacity in English and Spanish.
-
+  Call to schedule an appointment. The initial consultation is $50. My office has bilingual capacity in English and Spanish.
 
 
 
 
   ## 301.439.0011
 hero_cta: En Español
-hero_link: /espanol/
-banner_image: /assets/courtroom.jpg
+hero_link: "/espanol/"
+banner_image: "/assets/courtroom.jpg"
 language: english
 sitemap: true
 ---
-
 
 # Law Office of Linda Cornelius
 

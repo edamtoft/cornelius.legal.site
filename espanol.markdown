@@ -2,20 +2,18 @@
 title: Inicio
 identifier: home
 layout: home
-hero_header: "¿Necesita usted representación legal o asesoramiento legal? Mi oficina
-  puede proveerle servicios en inglés y español y ayudarle a encontrar las mejores
-  opciones disponibles para su situación."
+hero_header:
 hero_content_markdown: |-
-  Se Agradece Llamar Antes Para Convenir Una Cita.
-  $50 por la primera consulta
+  Se Agradece Llamar Antes Para Convenir Una Cita. $50 por la primera consulta
 
   ## 301-439-0011
 hero_cta: English
-hero_link: "/"
-banner_image: "/assets/courtroom.jpg"
+hero_link: /
+banner_image: /assets/courtroom.jpg
 language: spanish
 sitemap: true
 ---
+
 
 # Oficina Legal de Linda Cornelius
 

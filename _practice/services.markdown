@@ -7,14 +7,13 @@ description_text: |-
   speaking community in Maryland.
 language: english
 icon: balance-scale
-banner_image: "/assets/books.jpg"
+banner_image: /assets/books.jpg
 sitemap: true
 order: 3
 ---
 
-&nbsp;
 
-The Law Office of Linda Cornelius is committed to providing legal services to the diverse Spanish speaking communities in Maryland, regardless of the immigration status, income level, sexual orientation, or gender identity of our clients.
+The Law Office of Linda Cornelius is committed to providing legal services to the diverse Spanish speaking communities in Maryland, regardless of income level, or disability, &nbsp;immigration status, sexual orientation, or gender identity.
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \* &nbsp; &nbsp; \* &nbsp; &nbsp;\*
 

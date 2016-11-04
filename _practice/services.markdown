@@ -2,14 +2,13 @@
 title: WHAT I THINK IS IMPORTANT
 identifier: community
 layout: contact
-description_text:
+description_text: 
 language: english
 icon: balance-scale
-banner_image: /assets/books.jpg
+banner_image: "/assets/books.jpg"
 sitemap: true
 order: 3
 ---
-
 
 I have been admitted to practice law in three tribal courts, (the court of the Bay Mills Indian Community and the court of the Sault Sainte Marie Tribe of Chippewa Indians in Michigan and the Court of the Mille Lac Band of Ojibwas in Minnesota), and I worked closely with tribal attorneys and tribal officials to make the justice system work for indigenous people in Michigan and Minnesota…because I think the legal rights of indigenous people are important.
 

@@ -1,5 +1,3 @@
-{% for navpage in site.pages %}{% if navpage.include_in_navigation %}
-<link rel="prefetch" href="{{navpage.url}}">
-{% endif %}{% if navpage.banner_image %}
-<link rel="prefetch" href="{{navpage.banner_image}}">
-{% endif %}{% endfor %}
+{% for navpage in site.pages %}{% if navpage.sitemap and navpage.language == page.language %}
+<link rel="prefetch" href="{{navpage.url}}">{% if navpage.banner_image %}
+<link rel="prefetch" href="{{navpage.banner_image | replace: '/assets', '/assets/thumbs'}}">{% endif %}{% endif %}{% endfor %}

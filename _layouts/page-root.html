@@ -4,8 +4,8 @@ layout: root
 
 {% assign res = site.data.translations[page.language] %}
 {% if page.banner_image %}
-<header class="hero text" style="background-image:url('{{page.banner_image}}')">
-  <h1 class="float-in">{{page.title}}</h1>
+<header class="hero text" style="background-image:url('{{page.banner_image}}'),url('{{page.banner_image | replace: '/assets', '/assets/thumbs'}}')">
+    <h1 class="float-in">{{page.title}}</h1>
 </header>
 {% endif %}
 <main class="main">

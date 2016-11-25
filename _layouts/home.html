@@ -2,7 +2,7 @@
 layout: root
 ---
 
-<header class="hero home" style="background-image: url('{{page.banner_image}}');">
+<header class="hero home" style="background-image:url('{{page.banner_image}}'),url('{{page.banner_image | replace: '/assets', '/assets/thumbs'}}');">
 	<div class="container row">
 		<div class="col-6 text-center translucent-block secondary float-in">
 			<div class="content">

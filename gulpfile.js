@@ -16,6 +16,6 @@ gulp.task("build-js", () => gulp
   .src("_scripts/**/*.js")
   .pipe(babel({ presets: ["es2015"] }))
   .pipe(uglify())
-  .pipe(gulp.dest("_includes/scripts")));
+  .pipe(gulp.dest("assets/scripts")));
 
 gulp.task("default", ["build-css", "build-js"], () => {});

@@ -1,7 +1,7 @@
 ---
 title: INMIGRACION
 identifier: immigrationlaw
-layout: contact
+layout: page
 description_text: Les represento en la corte de Inmigracion en Baltimore, en casos
   de deportación, asilo, dispensa juvenil para menores (SIJS), asesoramiento en peticiones
   familiares, DACA, TPS.

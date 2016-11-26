@@ -1,7 +1,7 @@
 ---
 title: Experience
 identifier: community
-layout: contact
+layout: page
 description_text: As your attorney, I bring broad experience to bear in your case.
 language: english
 icon: balance-scale

@@ -1,7 +1,7 @@
 ---
 title: SERVICIOS LEGALES EN GENERAL
 identifier: generalpractice
-layout: contact
+layout: page
 description_text: Cuando usted tenga un problema legal. Llámenos y haremos una cita
   de manera que reciba la debida asistencia legal.
 language: spanish

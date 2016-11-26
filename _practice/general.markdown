@@ -1,7 +1,7 @@
 ---
 title: General Civil Law
 identifier: CivilLaw
-layout: contact
+layout: page
 description_text: |-
   We can help you with cases in state courts in Maryland.
   When you have a legal problem, call and make an appointment and get the advice of a lawyer.

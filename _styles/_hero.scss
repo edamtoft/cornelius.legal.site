@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   flex-direction: row;
+  filter: none,blur(100px);
   background-color: $page-image-color;
   background-size: cover;
   background-repeat: no-repeat;

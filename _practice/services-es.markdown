@@ -1,7 +1,7 @@
 ---
 title: SERVICIOS LEGALES PARA LAS DIVERSAS COMUNIDADES DE HABLA HISPANA
 identifier: community
-layout: contact
+layout: page
 description_text: 
 language: spanish
 icon: balance-scale

@@ -1,15 +1,14 @@
 ---
-title:
+title: Services Es
 identifier: community
 layout: page
-description_text:
+description_text: 
 language: spanish
 icon: balance-scale
-banner_image: /assets/books.jpg
+banner_image: "/assets/books.jpg"
 sitemap: true
 order: 3
 ---
-
 
 Nuestros servicios legales son accesibles a toda la comunidad
 

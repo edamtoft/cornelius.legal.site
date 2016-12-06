@@ -1,17 +1,18 @@
 ---
-title: SERVICIOS LEGALES PARA LAS DIVERSAS COMUNIDADES DE HABLA HISPANA
+title:
 identifier: community
 layout: page
-description_text: 
+description_text:
 language: spanish
 icon: balance-scale
-banner_image: "/assets/books.jpg"
+banner_image: /assets/books.jpg
 sitemap: true
 order: 3
 ---
 
+
 Nuestros servicios legales son accesibles a toda la comunidad
 
-La Oficina Legal de Linda Cornelius est&aacute; comprometida a prestar servicios legales a las diversas comunidades de habla hispana en Maryland, independientemente de su nivel de ingresos, disabilidad, estado migratorio, orientaci&oacute;n sexual o identidad de g&eacute;nero.
+La Oficina Legal de Linda Cornelius está comprometida a prestar servicios legales a las diversas comunidades de habla hispana en Maryland, independientemente de su nivel de ingresos, disabilidad, estado migratorio, orientación sexual o identidad de género.
 
-Servicios para la comunidad LGBTQ que incluyen, cambio de nombre, cambio de identificaci&oacute;n de g&eacute;nero, testamentos, poderes de abogado, reclamaciones de asilo basados en la discriminaci&oacute;n debido la identidad de g&eacute;nero, y otros casos de derecho civil en Maryland.
+Servicios para la comunidad LGBTQ que incluyen, cambio de nombre, cambio de identificación de género, testamentos, poderes de abogado, reclamaciones de asilo basados en la discriminación debido la identidad de género, y otros casos de derecho civil en Maryland.

@@ -2,14 +2,13 @@
 title: Experience
 identifier: community
 layout: page
-description_text: 'As your attorney, I bring broad experience to bear in your case.'
+description_text: As your attorney, I bring broad experience to bear in your case.
 language: english
 icon: balance-scale
-banner_image: /assets/books.jpg
+banner_image: "/assets/books.jpg"
 sitemap: true
 order: 3
 ---
-
 
 I worked for ten years in Legal Services offices in Michigan, Minnesota, Virginia, and Illinois that provided free legal help to low income people, and I take part now in clinics to provide legal help pro bono…because as an attorney I know that having access to legal assistance and a lawyer when you go to court is important.
 

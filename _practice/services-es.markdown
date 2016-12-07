@@ -2,14 +2,13 @@
 title: Experiencia
 identifier: community
 layout: page
-description_text:
+description_text: 
 language: spanish
 icon: balance-scale
-banner_image: /assets/books.jpg
+banner_image: "/assets/books.jpg"
 sitemap: true
 order: 3
 ---
-
 
 **Lo que me parece es importante:**
 

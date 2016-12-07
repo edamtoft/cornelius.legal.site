@@ -2,26 +2,20 @@
 title: Inicio
 identifier: home
 layout: home
-hero_header: >-
-  La Oficina Legal de Linda Cornelius esta localizada en Takoma Park, cerca de
-  Langley Park. Represento  clientes en casos de inmigracion y en casos civiles
-  en la corte de Maryland.
-
+hero_header: |-
+  La Oficina Legal de Linda Cornelius esta localizada en Takoma Park, cerca de Langley Park. Represento  clientes en casos de inmigracion y en casos civiles en la corte de Maryland.
   ____________________________________________________
-
-  Trabajo con usted para buscar la mejor solucion para su situation. Mi objetivo
-  es proporcionar una representacion legal asequible y efectiva.
+  Trabajo con usted para buscar la mejor solucion para su situation. Mi objetivo es proporcionar una representacion legal asequible y efectiva.
 hero_content_markdown: |-
   Se Agradece Llamar Antes Para Convenir Una Cita. $50 por la primera consulta
 
   ## 301-439-0011
 hero_cta: English
-hero_link: /
-banner_image: /assets/courtroom.jpg
+hero_link: "/"
+banner_image: "/assets/courtroom.jpg"
 language: spanish
 sitemap: true
 ---
-
 
 # Oficina Legal de Linda Cornelius
 

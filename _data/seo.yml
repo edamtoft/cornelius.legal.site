@@ -11,8 +11,8 @@ structured:
     postalCode: '20912'
   telephone: 301-439-0011
   url: 'http://www.cornelius.legal'
-  name: Law Office of Linda cornelius
-  logo: http://www.cornelius.legal/assets/logo.png
+  name: Law Office of Linda Cornelius
+  logo: 'http://www.cornelius.legal/assets/logo.png'
   geo:
     '@type': GeoCoordinates
     latitude: '38.9848734'
